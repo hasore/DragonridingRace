@@ -106,7 +106,7 @@ end
 function DRR:CheckMyOwnPB()
     table.foreach(DRR.db.global.pb, function(raceId, time)
         local race = DRR:GetRace(raceId);
-        local raceTime = DRR.RaceTime:Create(race.id, time, race.advanced);
+        local raceTime = DRR.RaceTime:Create(race.id, time, race.raceType);
         DRR:TrySetGuildBest(raceTime);
     end);
 end

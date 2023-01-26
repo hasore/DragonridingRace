@@ -1,10 +1,10 @@
-## Interface: 100002
+## Interface: 100005
 
 ## Title: DragonridingRace
 ## Notes: Save your best dragonriding course's times and compete with your friends!
 ## Notes-frFR: Enregistre tes meilleurs temps et entre en compétition avec tes amis !
 ## Author: Tzinn
-## Version: 0.1.5
+## Version: 0.2.0
 ## SavedVariables: DRRDB
 ## X-License: WTFPL
 

@@ -55,7 +55,7 @@ end
 function DRR:SendAllPBs()
     table.foreach(DRR.db.global.pb, function(raceId, time)
         local race = DRR:GetRace(raceId);
-        local raceTime = DRR.RaceTime:Create(race.id, time, race.advanced);
+        local raceTime = DRR.RaceTime:Create(race.id, time, race.raceType);
         DRR:SendPB(raceTime);
     end);
 end

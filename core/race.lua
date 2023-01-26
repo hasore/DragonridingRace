@@ -6,99 +6,126 @@ local setmetatable = _G.setmetatable;
 DRR.Races = {};
 -- The Waking Shores
 -- Ruby Lifeshrine Loop
-table.insert(DRR.Races, {id = 66679, name = L["RACE_66679"], advanced = false, gold = 64});
-table.insert(DRR.Races, {id = 66692, name = L["RACE_66692"], advanced = true, gold = 52});
+table.insert(DRR.Races, {id = 66679, name = L["RACE_66679"], raceType = 0, gold = 64});
+table.insert(DRR.Races, {id = 66692, name = L["RACE_66692"], raceType = 1, gold = 52});
+table.insert(DRR.Races, {id = 72052, name = L["RACE_72052"], raceType = 2, gold = 10}); -- temporary timer
 -- Flashfrost Flyover
-table.insert(DRR.Races, {id = 66710, name = L["RACE_66710"], advanced = false, gold = 63});
-table.insert(DRR.Races, {id = 66712, name = L["RACE_66712"], advanced = true, gold = 61});
+table.insert(DRR.Races, {id = 66710, name = L["RACE_66710"], raceType = 0, gold = 63});
+table.insert(DRR.Races, {id = 66712, name = L["RACE_66712"], raceType = 1, gold = 61});
+table.insert(DRR.Races, {id = 72700, name = L["RACE_72700"], raceType = 2, gold = 10}); -- temporary timer
 -- Wild Preserve Slalom
-table.insert(DRR.Races, {id = 66721, name = L["RACE_66721"], advanced = false, gold = 43});
-table.insert(DRR.Races, {id = 66722, name = L["RACE_66722"], advanced = true, gold = 40});
+table.insert(DRR.Races, {id = 66721, name = L["RACE_66721"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 66722, name = L["RACE_66722"], raceType = 1, gold = 40});
+table.insert(DRR.Races, {id = 72705, name = L["RACE_72705"], raceType = 2, gold = 10}); -- temporary timer
 -- Wild Preserve Circuit
-table.insert(DRR.Races, {id = 66725, name = L["RACE_66725"], advanced = false, gold = 41});
-table.insert(DRR.Races, {id = 66726, name = L["RACE_66726"], advanced = true, gold = 38});
+table.insert(DRR.Races, {id = 66725, name = L["RACE_66725"], raceType = 0, gold = 41});
+table.insert(DRR.Races, {id = 66726, name = L["RACE_66726"], raceType = 1, gold = 38});
+table.insert(DRR.Races, {id = 72706, name = L["RACE_72706"], raceType = 2, gold = 10}); -- temporary timer
 -- Apex Canopy River Run
-table.insert(DRR.Races, {id = 66732, name = L["RACE_66732"], advanced = false, gold = 48});
-table.insert(DRR.Races, {id = 66733, name = L["RACE_66733"], advanced = true, gold = 45});
+table.insert(DRR.Races, {id = 66732, name = L["RACE_66732"], raceType = 0, gold = 48});
+table.insert(DRR.Races, {id = 66733, name = L["RACE_66733"], raceType = 1, gold = 45});
+table.insert(DRR.Races, {id = 72734, name = L["RACE_72734"], raceType = 2, gold = 10}); -- temporary timer
 -- Emberflow Flight
-table.insert(DRR.Races, {id = 66727, name = L["RACE_66727"], advanced = false, gold = 47});
-table.insert(DRR.Races, {id = 66728, name = L["RACE_66728"], advanced = true, gold = 44});
+table.insert(DRR.Races, {id = 66727, name = L["RACE_66727"], raceType = 0, gold = 47});
+table.insert(DRR.Races, {id = 66728, name = L["RACE_66728"], raceType = 1, gold = 44});
+table.insert(DRR.Races, {id = 72707, name = L["RACE_72707"], raceType = 2, gold = 10}); -- temporary timer
 -- Uktulut Coaster
-table.insert(DRR.Races, {id = 66777, name = L["RACE_66777"], advanced = false, gold = 43});
-table.insert(DRR.Races, {id = 66778, name = L["RACE_66778"], advanced = true, gold = 40});
+table.insert(DRR.Races, {id = 66777, name = L["RACE_66777"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 66778, name = L["RACE_66778"], raceType = 1, gold = 40});
+table.insert(DRR.Races, {id = 72739, name = L["RACE_72739"], raceType = 2, gold = 43});
 -- Wingrehst Roundabout
-table.insert(DRR.Races, {id = 66786, name = L["RACE_66786"], advanced = false, gold = 53});
-table.insert(DRR.Races, {id = 66787, name = L["RACE_66787"], advanced = true, gold = 53});
+table.insert(DRR.Races, {id = 66786, name = L["RACE_66786"], raceType = 0, gold = 53});
+table.insert(DRR.Races, {id = 66787, name = L["RACE_66787"], raceType = 1, gold = 53});
+table.insert(DRR.Races, {id = 72740, name = L["RACE_72740"], raceType = 2, gold = 56});
 
 -- Ohn'ahran Plains
 -- Sundapple Copse Circuit
-table.insert(DRR.Races, {id = 66835, name = L["RACE_66835"], advanced = false, gold = 44});
-table.insert(DRR.Races, {id = 66836, name = L["RACE_66836"], advanced = true, gold = 41});
+table.insert(DRR.Races, {id = 66835, name = L["RACE_66835"], raceType = 0, gold = 44});
+table.insert(DRR.Races, {id = 66836, name = L["RACE_66836"], raceType = 1, gold = 41});
+table.insert(DRR.Races, {id = 72801, name = L["RACE_72801"], raceType = 2, gold = 10}); -- temporary timer
 -- Fen Flythrough
-table.insert(DRR.Races, {id = 66877, name = L["RACE_66877"], advanced = false, gold = 44});
-table.insert(DRR.Races, {id = 66878, name = L["RACE_66878"], advanced = true, gold = 41});
+table.insert(DRR.Races, {id = 66877, name = L["RACE_66877"], raceType = 0, gold = 44});
+table.insert(DRR.Races, {id = 66878, name = L["RACE_66878"], raceType = 1, gold = 41});
+table.insert(DRR.Races, {id = 72802, name = L["RACE_72802"], raceType = 2, gold = 10}); -- temporary timer
 -- Ravine River Run
-table.insert(DRR.Races, {id = 66880, name = L["RACE_66880"], advanced = false, gold = 50});
-table.insert(DRR.Races, {id = 66881, name = L["RACE_66881"], advanced = true, gold = 47});
+table.insert(DRR.Races, {id = 66880, name = L["RACE_66880"], raceType = 0, gold = 50});
+table.insert(DRR.Races, {id = 66881, name = L["RACE_66881"], raceType = 1, gold = 47});
+table.insert(DRR.Races, {id = 72803, name = L["RACE_72803"], raceType = 2, gold = 10}); -- temporary timer
 -- Emerald Garden Ascent
-table.insert(DRR.Races, {id = 66885, name = L["RACE_66885"], advanced = false, gold = 59});
-table.insert(DRR.Races, {id = 66886, name = L["RACE_66886"], advanced = true, gold = 55});
+table.insert(DRR.Races, {id = 66885, name = L["RACE_66885"], raceType = 0, gold = 59});
+table.insert(DRR.Races, {id = 66886, name = L["RACE_66886"], raceType = 1, gold = 55});
+table.insert(DRR.Races, {id = 72805, name = L["RACE_72805"], raceType = 2, gold = 10}); -- temporary timer
 -- Maruukai Dash
-table.insert(DRR.Races, {id = 66921, name = L["RACE_66921"], advanced = false, gold = 25});
+table.insert(DRR.Races, {id = 66921, name = L["RACE_66921"], raceType = 0, gold = 25});
 -- Mirror of the Sky Dash
-table.insert(DRR.Races, {id = 66933, name = L["RACE_66933"], advanced = false, gold = 26});
+table.insert(DRR.Races, {id = 66933, name = L["RACE_66933"], raceType = 0, gold = 26});
 -- River Rapids Route
-table.insert(DRR.Races, {id = 70710, name = L["RACE_70710"], advanced = false, gold = 46});
-table.insert(DRR.Races, {id = 70711, name = L["RACE_70711"], advanced = true, gold = 43});
+table.insert(DRR.Races, {id = 70710, name = L["RACE_70710"], raceType = 0, gold = 46});
+table.insert(DRR.Races, {id = 70711, name = L["RACE_70711"], raceType = 1, gold = 43});
+table.insert(DRR.Races, {id = 72807, name = L["RACE_72807"], raceType = 2, gold = 10}); -- temporary timer
 
 -- Azure Span
 -- The Azure Span Sprint
-table.insert(DRR.Races, {id = 66946, name = L["RACE_66946"], advanced = false, gold = 63});
-table.insert(DRR.Races, {id = 66947, name = L["RACE_66947"], advanced = true, gold = 58});
+table.insert(DRR.Races, {id = 66946, name = L["RACE_66946"], raceType = 0, gold = 63});
+table.insert(DRR.Races, {id = 66947, name = L["RACE_66947"], raceType = 1, gold = 58});
+table.insert(DRR.Races, {id = 72796, name = L["RACE_72796"], raceType = 2, gold = 10}); -- temporary timer
 -- The Azure Span Slalom
-table.insert(DRR.Races, {id = 67002, name = L["RACE_67002"], advanced = false, gold = 58});
-table.insert(DRR.Races, {id = 67003, name = L["RACE_67003"], advanced = true, gold = 56});
+table.insert(DRR.Races, {id = 67002, name = L["RACE_67002"], raceType = 0, gold = 58});
+table.insert(DRR.Races, {id = 67003, name = L["RACE_67003"], raceType = 1, gold = 56});
+table.insert(DRR.Races, {id = 72799, name = L["RACE_72799"], raceType = 2, gold = 10}); -- temporary timer
 -- The Vakthros Ascent
-table.insert(DRR.Races, {id = 67031, name = L["RACE_67031"], advanced = false, gold = 58});
-table.insert(DRR.Races, {id = 67032, name = L["RACE_67032"], advanced = true, gold = 56});
+table.insert(DRR.Races, {id = 67031, name = L["RACE_67031"], raceType = 0, gold = 58});
+table.insert(DRR.Races, {id = 67032, name = L["RACE_67032"], raceType = 1, gold = 56});
+table.insert(DRR.Races, {id = 72794, name = L["RACE_72794"], raceType = 2, gold = 10}); -- temporary timer
 -- Iskaara Tour
-table.insert(DRR.Races, {id = 67296, name = L["RACE_67296"], advanced = false, gold = 75});
-table.insert(DRR.Races, {id = 67297, name = L["RACE_67297"], advanced = true, gold = 70});
+table.insert(DRR.Races, {id = 67296, name = L["RACE_67296"], raceType = 0, gold = 75});
+table.insert(DRR.Races, {id = 67297, name = L["RACE_67297"], raceType = 1, gold = 70});
+table.insert(DRR.Races, {id = 72800, name = L["RACE_72800"], raceType = 2, gold = 10}); -- temporary timer
 -- Frostland Flyover
-table.insert(DRR.Races, {id = 67565, name = L["RACE_67565"], advanced = false, gold = 76});
-table.insert(DRR.Races, {id = 67566, name = L["RACE_67566"], advanced = true, gold = 72});
+table.insert(DRR.Races, {id = 67565, name = L["RACE_67565"], raceType = 0, gold = 76});
+table.insert(DRR.Races, {id = 67566, name = L["RACE_67566"], raceType = 1, gold = 72});
+table.insert(DRR.Races, {id = 72795, name = L["RACE_72795"], raceType = 2, gold = 10}); -- temporary timer
 -- Archive Ambit
-table.insert(DRR.Races, {id = 67741, name = L["RACE_67741"], advanced = false, gold = 91});
-table.insert(DRR.Races, {id = 67742, name = L["RACE_67742"], advanced = true, gold = 81});
+table.insert(DRR.Races, {id = 67741, name = L["RACE_67741"], raceType = 0, gold = 91});
+table.insert(DRR.Races, {id = 67742, name = L["RACE_67742"], raceType = 1, gold = 81});
+table.insert(DRR.Races, {id = 72797, name = L["RACE_72797"], raceType = 2, gold = 10}); -- temporary timer
 
 -- Thaldraszus
 -- The Flowing Forest Flight
-table.insert(DRR.Races, {id = 67095, name = L["RACE_67095"], advanced = false, gold = 49});
-table.insert(DRR.Races, {id = 67096, name = L["RACE_67096"], advanced = true, gold = 40});
+table.insert(DRR.Races, {id = 67095, name = L["RACE_67095"], raceType = 0, gold = 49});
+table.insert(DRR.Races, {id = 67096, name = L["RACE_67096"], raceType = 1, gold = 40});
+table.insert(DRR.Races, {id = 72793, name = L["RACE_72793"], raceType = 2, gold = 10}); -- temporary timer
 -- Tyrhold Trial
-table.insert(DRR.Races, {id = 69957, name = L["RACE_69957"], advanced = false, gold = 81});
-table.insert(DRR.Races, {id = 69958, name = L["RACE_69958"], advanced = true, gold = 75});
+table.insert(DRR.Races, {id = 69957, name = L["RACE_69957"], raceType = 0, gold = 81});
+table.insert(DRR.Races, {id = 69958, name = L["RACE_69958"], raceType = 1, gold = 75});
+table.insert(DRR.Races, {id = 72792, name = L["RACE_72792"], raceType = 2, gold = 10}); -- temporary timer
 -- Cliffside Circuit
-table.insert(DRR.Races, {id = 70051, name = L["RACE_70051"], advanced = false, gold = 69});
-table.insert(DRR.Races, {id = 70052, name = L["RACE_70052"], advanced = true, gold = 66});
+table.insert(DRR.Races, {id = 70051, name = L["RACE_70051"], raceType = 0, gold = 69});
+table.insert(DRR.Races, {id = 70052, name = L["RACE_70052"], raceType = 1, gold = 66});
+table.insert(DRR.Races, {id = 72760, name = L["RACE_72760"], raceType = 2, gold = 10}); -- temporary timer
 -- Academy Ascent
-table.insert(DRR.Races, {id = 70059, name = L["RACE_70059"], advanced = false, gold = 54});
-table.insert(DRR.Races, {id = 70060, name = L["RACE_70060"], advanced = true, gold = 52});
+table.insert(DRR.Races, {id = 70059, name = L["RACE_70059"], raceType = 0, gold = 54});
+table.insert(DRR.Races, {id = 70060, name = L["RACE_70060"], raceType = 1, gold = 52});
+table.insert(DRR.Races, {id = 72754, name = L["RACE_72754"], raceType = 2, gold = 10}); -- temporary timer
 -- Garden Gallivant
-table.insert(DRR.Races, {id = 70157, name = L["RACE_70157"], advanced = false, gold = 61});
-table.insert(DRR.Races, {id = 70158, name = L["RACE_70158"], advanced = true, gold = 54});
+table.insert(DRR.Races, {id = 70157, name = L["RACE_70157"], raceType = 0, gold = 61});
+table.insert(DRR.Races, {id = 70158, name = L["RACE_70158"], raceType = 1, gold = 54});
+table.insert(DRR.Races, {id = 72769, name = L["RACE_72769"], raceType = 2, gold = 10}); -- temporary timer
 -- Caverns Criss-Cross
-table.insert(DRR.Races, {id = 70161, name = L["RACE_70161"], advanced = false, gold = 50});
-table.insert(DRR.Races, {id = 70163, name = L["RACE_70163"], advanced = true, gold = 45});
+table.insert(DRR.Races, {id = 70161, name = L["RACE_70161"], raceType = 0, gold = 50});
+table.insert(DRR.Races, {id = 70163, name = L["RACE_70163"], raceType = 1, gold = 45});
+table.insert(DRR.Races, {id = 72750, name = L["RACE_72750"], raceType = 2, gold = 10}); -- temporary timer
 
 
 DRR.CURRENT_RACE = nil;
 DRR.LAST_RACE = nil;
 
 function DRR:GetRace(questID)
-    for index, race in ipairs(DRR.Races) do
-        if tonumber(race.id) == tonumber(questID) then
-            return race;
+    if questID then
+        for index, race in ipairs(DRR.Races) do
+            if tonumber(race.id) == tonumber(questID) then
+                return race;
+            end
         end
     end
 
@@ -113,7 +140,7 @@ end
 function DRR:EndRace(time)
     if DRR.CURRENT_RACE then
         local race = DRR.CURRENT_RACE;
-        local raceTime = DRR.RaceTime:Create(race.id, time, race.advanced);
+        local raceTime = DRR.RaceTime:Create(race.id, time, race.raceType);
         table.insert(DRR.db.global.races, raceTime);
 
         local isPB, previousTime = DRR:TrySetPB(raceTime);
@@ -139,7 +166,7 @@ end
 function DRR:EndRaceWithBetterTime(time, bestTime)
     if DRR.CURRENT_RACE then
         local race = DRR.CURRENT_RACE;
-        local raceTime = DRR.RaceTime:Create(race.id, bestTime, race.advanced);
+        local raceTime = DRR.RaceTime:Create(race.id, bestTime, race.raceType);
         table.insert(DRR.db.global.races, raceTime);
 
         local isPB, previousTime = DRR:TrySetPB(raceTime);
@@ -151,7 +178,7 @@ function DRR:EndRaceWithBetterTime(time, bestTime)
         if isPB then
             DRR:OnPBBeaten(race, raceTime);
         else
-            raceTime = DRR.RaceTime:Create(race.id, time, race.advanced);
+            raceTime = DRR.RaceTime:Create(race.id, time, race.raceType);
             DRR:OnRaceEnded(race, raceTime);
         end
 
