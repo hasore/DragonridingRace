@@ -18,6 +18,8 @@ Features to come:
 
 - Custom competition mode
 
+## Preview
+![Wow_ATx4mkva8N](https://user-images.githubusercontent.com/1711517/214788028-70a9150a-90f4-4bf5-96b6-cd9af943c1b4.png)
 
 ## Contributors
 
