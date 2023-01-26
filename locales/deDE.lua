@@ -39,9 +39,9 @@ if L then
 
     L["RACE_66679"] = "Rubinlebensschrein-Schleife"
     L["RACE_66692"] = "Rubinlebensschrein-Schleife (fortgeschritten)"
-    L["RACE_66777"] = "Blitzfrost-Überflug"
-    L["RACE_66778"] = "Blitzfrost-Überflug (fortgeschritten)"
     L["RACE_72052"] = "Rubinlebensschrein-Schleife (umgekehrt)"
+    L["RACE_66710"] = "Blitzfrost-Überflug"
+    L["RACE_66712"] = "Blitzfrost-Überflug (fortgeschritten)"
     L["RACE_72700"] = "Blitzfrost-Überflug (umgekehrt)"
     L["RACE_66721"] = "Wildreservat-Slalom"
     L["RACE_66722"] = "Wildreservat-Slalom (fortgeschritten)"
