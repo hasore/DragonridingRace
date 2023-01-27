@@ -42,19 +42,19 @@ table.insert(DRR.Races, {id = 72740, name = L["RACE_72740"], raceType = 2, gold 
 -- Sundapple Copse Circuit
 table.insert(DRR.Races, {id = 66835, name = L["RACE_66835"], raceType = 0, gold = 44});
 table.insert(DRR.Races, {id = 66836, name = L["RACE_66836"], raceType = 1, gold = 41});
-table.insert(DRR.Races, {id = 72801, name = L["RACE_72801"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72801, name = L["RACE_72801"], raceType = 2, gold = 45});
 -- Fen Flythrough
 table.insert(DRR.Races, {id = 66877, name = L["RACE_66877"], raceType = 0, gold = 44});
 table.insert(DRR.Races, {id = 66878, name = L["RACE_66878"], raceType = 1, gold = 41});
-table.insert(DRR.Races, {id = 72802, name = L["RACE_72802"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72802, name = L["RACE_72802"], raceType = 2, gold = 47});
 -- Ravine River Run
 table.insert(DRR.Races, {id = 66880, name = L["RACE_66880"], raceType = 0, gold = 50});
 table.insert(DRR.Races, {id = 66881, name = L["RACE_66881"], raceType = 1, gold = 47});
-table.insert(DRR.Races, {id = 72803, name = L["RACE_72803"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72803, name = L["RACE_72803"], raceType = 2, gold = 46});
 -- Emerald Garden Ascent
 table.insert(DRR.Races, {id = 66885, name = L["RACE_66885"], raceType = 0, gold = 59});
 table.insert(DRR.Races, {id = 66886, name = L["RACE_66886"], raceType = 1, gold = 55});
-table.insert(DRR.Races, {id = 72805, name = L["RACE_72805"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72805, name = L["RACE_72805"], raceType = 2, gold = 57});
 -- Maruukai Dash
 table.insert(DRR.Races, {id = 66921, name = L["RACE_66921"], raceType = 0, gold = 25});
 -- Mirror of the Sky Dash
@@ -62,7 +62,7 @@ table.insert(DRR.Races, {id = 66933, name = L["RACE_66933"], raceType = 0, gold 
 -- River Rapids Route
 table.insert(DRR.Races, {id = 70710, name = L["RACE_70710"], raceType = 0, gold = 46});
 table.insert(DRR.Races, {id = 70711, name = L["RACE_70711"], raceType = 1, gold = 43});
-table.insert(DRR.Races, {id = 72807, name = L["RACE_72807"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72807, name = L["RACE_72807"], raceType = 2, gold = 44});
 
 -- Azure Span
 -- The Azure Span Sprint
