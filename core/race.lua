@@ -68,23 +68,23 @@ table.insert(DRR.Races, {id = 72807, name = L["RACE_72807"], raceType = 2, gold 
 -- The Azure Span Sprint
 table.insert(DRR.Races, {id = 66946, name = L["RACE_66946"], raceType = 0, gold = 63});
 table.insert(DRR.Races, {id = 66947, name = L["RACE_66947"], raceType = 1, gold = 58});
-table.insert(DRR.Races, {id = 72796, name = L["RACE_72796"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72796, name = L["RACE_72796"], raceType = 2, gold = 60});
 -- The Azure Span Slalom
 table.insert(DRR.Races, {id = 67002, name = L["RACE_67002"], raceType = 0, gold = 58});
 table.insert(DRR.Races, {id = 67003, name = L["RACE_67003"], raceType = 1, gold = 56});
-table.insert(DRR.Races, {id = 72799, name = L["RACE_72799"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72799, name = L["RACE_72799"], raceType = 2, gold = 53});
 -- The Vakthros Ascent
 table.insert(DRR.Races, {id = 67031, name = L["RACE_67031"], raceType = 0, gold = 58});
 table.insert(DRR.Races, {id = 67032, name = L["RACE_67032"], raceType = 1, gold = 56});
-table.insert(DRR.Races, {id = 72794, name = L["RACE_72794"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72794, name = L["RACE_72794"], raceType = 2, gold = 56});
 -- Iskaara Tour
 table.insert(DRR.Races, {id = 67296, name = L["RACE_67296"], raceType = 0, gold = 75});
 table.insert(DRR.Races, {id = 67297, name = L["RACE_67297"], raceType = 1, gold = 70});
-table.insert(DRR.Races, {id = 72800, name = L["RACE_72800"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72800, name = L["RACE_72800"], raceType = 2, gold = 67});
 -- Frostland Flyover
 table.insert(DRR.Races, {id = 67565, name = L["RACE_67565"], raceType = 0, gold = 76});
 table.insert(DRR.Races, {id = 67566, name = L["RACE_67566"], raceType = 1, gold = 72});
-table.insert(DRR.Races, {id = 72795, name = L["RACE_72795"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72795, name = L["RACE_72795"], raceType = 2, gold = 69});
 -- Archive Ambit
 table.insert(DRR.Races, {id = 67741, name = L["RACE_67741"], raceType = 0, gold = 91});
 table.insert(DRR.Races, {id = 67742, name = L["RACE_67742"], raceType = 1, gold = 81});
