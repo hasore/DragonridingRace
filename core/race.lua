@@ -8,27 +8,27 @@ DRR.Races = {};
 -- Ruby Lifeshrine Loop
 table.insert(DRR.Races, {id = 66679, name = L["RACE_66679"], raceType = 0, gold = 64});
 table.insert(DRR.Races, {id = 66692, name = L["RACE_66692"], raceType = 1, gold = 52});
-table.insert(DRR.Races, {id = 72052, name = L["RACE_72052"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72052, name = L["RACE_72052"], raceType = 2, gold = 50});
 -- Flashfrost Flyover
 table.insert(DRR.Races, {id = 66710, name = L["RACE_66710"], raceType = 0, gold = 63});
 table.insert(DRR.Races, {id = 66712, name = L["RACE_66712"], raceType = 1, gold = 61});
-table.insert(DRR.Races, {id = 72700, name = L["RACE_72700"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72700, name = L["RACE_72700"], raceType = 2, gold = 60});
 -- Wild Preserve Slalom
 table.insert(DRR.Races, {id = 66721, name = L["RACE_66721"], raceType = 0, gold = 43});
 table.insert(DRR.Races, {id = 66722, name = L["RACE_66722"], raceType = 1, gold = 40});
-table.insert(DRR.Races, {id = 72705, name = L["RACE_72705"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72705, name = L["RACE_72705"], raceType = 2, gold = 41});
 -- Wild Preserve Circuit
 table.insert(DRR.Races, {id = 66725, name = L["RACE_66725"], raceType = 0, gold = 41});
 table.insert(DRR.Races, {id = 66726, name = L["RACE_66726"], raceType = 1, gold = 38});
-table.insert(DRR.Races, {id = 72706, name = L["RACE_72706"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72706, name = L["RACE_72706"], raceType = 2, gold = 41});
 -- Apex Canopy River Run
 table.insert(DRR.Races, {id = 66732, name = L["RACE_66732"], raceType = 0, gold = 48});
 table.insert(DRR.Races, {id = 66733, name = L["RACE_66733"], raceType = 1, gold = 45});
-table.insert(DRR.Races, {id = 72734, name = L["RACE_72734"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72734, name = L["RACE_72734"], raceType = 2, gold = 48});
 -- Emberflow Flight
 table.insert(DRR.Races, {id = 66727, name = L["RACE_66727"], raceType = 0, gold = 47});
 table.insert(DRR.Races, {id = 66728, name = L["RACE_66728"], raceType = 1, gold = 44});
-table.insert(DRR.Races, {id = 72707, name = L["RACE_72707"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72707, name = L["RACE_72707"], raceType = 2, gold = 45});
 -- Uktulut Coaster
 table.insert(DRR.Races, {id = 66777, name = L["RACE_66777"], raceType = 0, gold = 43});
 table.insert(DRR.Races, {id = 66778, name = L["RACE_66778"], raceType = 1, gold = 40});
