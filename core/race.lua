@@ -88,33 +88,33 @@ table.insert(DRR.Races, {id = 72795, name = L["RACE_72795"], raceType = 2, gold 
 -- Archive Ambit
 table.insert(DRR.Races, {id = 67741, name = L["RACE_67741"], raceType = 0, gold = 91});
 table.insert(DRR.Races, {id = 67742, name = L["RACE_67742"], raceType = 1, gold = 81});
-table.insert(DRR.Races, {id = 72797, name = L["RACE_72797"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72797, name = L["RACE_72797"], raceType = 2, gold = 76});
 
 -- Thaldraszus
 -- The Flowing Forest Flight
 table.insert(DRR.Races, {id = 67095, name = L["RACE_67095"], raceType = 0, gold = 49});
 table.insert(DRR.Races, {id = 67096, name = L["RACE_67096"], raceType = 1, gold = 40});
-table.insert(DRR.Races, {id = 72793, name = L["RACE_72793"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72793, name = L["RACE_72793"], raceType = 2, gold = 41});
 -- Tyrhold Trial
 table.insert(DRR.Races, {id = 69957, name = L["RACE_69957"], raceType = 0, gold = 81});
 table.insert(DRR.Races, {id = 69958, name = L["RACE_69958"], raceType = 1, gold = 75});
-table.insert(DRR.Races, {id = 72792, name = L["RACE_72792"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72792, name = L["RACE_72792"], raceType = 2, gold = 59});
 -- Cliffside Circuit
 table.insert(DRR.Races, {id = 70051, name = L["RACE_70051"], raceType = 0, gold = 69});
 table.insert(DRR.Races, {id = 70052, name = L["RACE_70052"], raceType = 1, gold = 66});
-table.insert(DRR.Races, {id = 72760, name = L["RACE_72760"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72760, name = L["RACE_72760"], raceType = 2, gold = 69});
 -- Academy Ascent
 table.insert(DRR.Races, {id = 70059, name = L["RACE_70059"], raceType = 0, gold = 54});
 table.insert(DRR.Races, {id = 70060, name = L["RACE_70060"], raceType = 1, gold = 52});
-table.insert(DRR.Races, {id = 72754, name = L["RACE_72754"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72754, name = L["RACE_72754"], raceType = 2, gold = 53});
 -- Garden Gallivant
 table.insert(DRR.Races, {id = 70157, name = L["RACE_70157"], raceType = 0, gold = 61});
 table.insert(DRR.Races, {id = 70158, name = L["RACE_70158"], raceType = 1, gold = 54});
-table.insert(DRR.Races, {id = 72769, name = L["RACE_72769"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72769, name = L["RACE_72769"], raceType = 2, gold = 57});
 -- Caverns Criss-Cross
 table.insert(DRR.Races, {id = 70161, name = L["RACE_70161"], raceType = 0, gold = 50});
 table.insert(DRR.Races, {id = 70163, name = L["RACE_70163"], raceType = 1, gold = 45});
-table.insert(DRR.Races, {id = 72750, name = L["RACE_72750"], raceType = 2, gold = 10}); -- temporary timer
+table.insert(DRR.Races, {id = 72750, name = L["RACE_72750"], raceType = 2, gold = 47});
 
 
 DRR.CURRENT_RACE = nil;
