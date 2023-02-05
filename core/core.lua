@@ -144,6 +144,10 @@ local function locate(table, value)
 end
 
 function DRR:OnMonsterSay(event, message, npc)
+    if DRR.CURRENT_RACE_CURRENCY then
+        return
+    end
+
     -- messages :
     -- - Your race time was 51.637 seconds. That was your best time yet!
     -- - Bronze Timekeeper says: Your race time was 64.944 seconds. Your personal best for this race is 51.064 seconds.
@@ -157,6 +161,7 @@ function DRR:OnMonsterSay(event, message, npc)
             table.insert(times, time);
             i = i + 1;
         end
+
         if table.getn(times) == 1 then
             DRR:EndRace(times[1]);
         elseif table.getn(times) > 1 then
@@ -176,46 +181,60 @@ function DRR:OnQuestAccepted(event, questId)
 end
 
 function DRR:OnQuestRemoved(event, questId)
-    if not questId or DRR.USE_CURRENCY == 0 then
+    if not DRR.CURRENT_RACE_CURRENCY or not DRR.CURRENT_RACE then
         return
     end
 
     local race = DRR.CURRENT_RACE;
 
-    if not race or race.id ~= questId then
+    if race.id ~= questId then
         return
     end
 
-    local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(DRR.USE_CURRENCY)
+    local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(DRR.CURRENT_RACE_CURRENCY);
 
     if not currencyInfo then
         return
     end
 
-    local currencyPb = currencyInfo.quantity
-    local savedPb = DRR.db.global.pb[questId]
+    local currencyPb = currencyInfo.quantity;
+    local savedPb = DRR.db.global.pb[questId];
 
     if not savedPb then
         DRR:OnRaceEndedSavedBest(race, currencyPb);
-        DRR:TrySetScoreOnly(currencyPb)
+        DRR:TrySetScoreOnly(currencyPb);
         return
     end
 
     -- Normalize currencyPb to a float with 3 decimals
-    currencyPb = currencyPb * 0.001
-    currencyPb = string.format("%.3f", currencyPb)    
+    currencyPb = currencyPb * 0.001;
+    currencyPb = string.format("%.3f", currencyPb);
     currencyPb = tonumber(currencyPb)
-
+;
     -- Normalize savedPb to a float with 3 decimals
-    savedPb = string.format("%.3f", savedPb)    
-    savedPb = tonumber(savedPb)
+    savedPb = string.format("%.3f", savedPb);
+    savedPb = tonumber(savedPb);
 
     if currencyPb < savedPb then
         DRR:EndRace(currencyPb);
-    else
+    elseif not DRR:Failed() then
         DRR:OnRaceEndedSavedBest(race, currencyPb);
-        DRR:TrySetScoreOnly(currencyPb)
+        DRR:TrySetScoreOnly(currencyPb);
     end
+end
+
+function DRR:Failed()
+    local spells = {394884, 382142}
+
+    for _, spell in pairs(spells) do
+        local name = C_UnitAuras.GetPlayerAuraBySpellID(spell);
+
+        if name then
+            return true
+        end
+    end
+
+    return false
 end
 
 function DRR:OnPBReceived(raceTime, character)

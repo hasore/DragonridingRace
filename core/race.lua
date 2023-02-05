@@ -118,8 +118,8 @@ table.insert(DRR.Races, {id = 72750, currency = 2199, name = L["RACE_72750"], ra
 
 
 DRR.CURRENT_RACE = nil;
+DRR.CURRENT_RACE_CURRENCY = nil;
 DRR.LAST_RACE = nil;
-DRR.USE_CURRENCY = 0;
 
 function DRR:GetRace(questID)
     if questID then
@@ -134,8 +134,8 @@ function DRR:GetRace(questID)
 end
 
 function DRR:StartRace(race)
-    DRR.USE_CURRENCY = race.currency or 0
     DRR.CURRENT_RACE = race;
+    DRR.CURRENT_RACE_CURRENCY = race.currency;
     DRR:Debug("Start race "..race.name);
 end
 
@@ -248,8 +248,8 @@ function DRR:OnRaceEnded(race, raceTime)
 end
 
 
-function DRR:OnRaceEndedSavedBest(race, raceTime)
-    DRR:Print(L["RACE_FINISHED_SAVED_BEST_FORMAT"](race.name, raceTime.time));
+function DRR:OnRaceEndedSavedBest(race, time)
+    DRR:Print(L["RACE_FINISHED_SAVED_BEST_FORMAT"](race.name, time));
 end
 
 function DRR:OnPBBeaten(race, raceTime, previousTime)
