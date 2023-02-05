@@ -8,7 +8,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale(addonName, true);
 local DRR = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "AceEvent-3.0", "AceConsole-3.0", "AceComm-3.0", "AceTimer-3.0");
 
 -- CONFIGURATION
-DRR.version = "0.3.3";
+DRR.version = "0.3.5";
 --DRR.version = "dev";
 DRR.versionAlertSent = false
 
@@ -48,7 +48,9 @@ local AceConfigDialog = LibStub("AceConfigDialog-3.0");
 -- DEFAULTS
 local dbDefaults = {
     global = {
-        options = {},
+        options = {
+            fallback = true,
+        },
         pb = {},
         guildpb = {},
         races = {},
@@ -117,6 +119,8 @@ function DRR:OnSlashCommand(input)
         local command, nextposition = DRR:GetArgs(input, 1);
         if "ping" == command then
             DRR:SendPing();
+        elseif "fallback" == command then
+            DRR:ToggleFallback();
         elseif "last" == command then
             local count = table.getn(DRR.db.global.races);
             local max = count - 10;
@@ -199,10 +203,15 @@ function DRR:OnQuestRemoved(event, questId)
 
     local currencyPb = currencyInfo.quantity;
     local savedPb = DRR.db.global.pb[questId];
+    local fallback = DRR.db.global.options.fallback;
 
     if not savedPb then
-        DRR:OnRaceEndedSavedBest(race, currencyPb);
-        DRR:TrySetScoreOnly(currencyPb);
+        if fallback then -- fallback to OnMonsterSay
+            DRR.CURRENT_RACE_CURRENCY = nil
+        else
+            DRR:OnRaceEndedSavedBest(race, currencyPb);
+            DRR:TrySetScoreOnly(currencyPb);
+        end
         return
     end
 
@@ -218,8 +227,14 @@ function DRR:OnQuestRemoved(event, questId)
     if currencyPb < savedPb then
         DRR:EndRace(currencyPb);
     elseif not DRR:Failed() then
-        DRR:OnRaceEndedSavedBest(race, currencyPb);
-        DRR:TrySetScoreOnly(currencyPb);
+        if fallback then -- fallback to OnMonsterSay
+            DRR.CURRENT_RACE_CURRENCY = nil
+        else
+            DRR:OnRaceEndedSavedBest(race, currencyPb);
+            DRR:TrySetScoreOnly(currencyPb);
+        end
+    elseif fallback then -- fallback to OnMonsterSay
+        DRR.CURRENT_RACE_CURRENCY = nil
     end
 end
 
@@ -277,4 +292,8 @@ function DRR:Debug(message)
     if "dev" == self.version then
         DRR:Print("|cFFAB18DB".. message .."|r");
     end
+end
+
+function DRR:ToggleFallback()
+    DRR.db.global.options.fallback = not DRR.db.global.options.fallback
 end
