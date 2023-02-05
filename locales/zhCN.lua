@@ -106,7 +106,7 @@ if L then
     L["RACE_70163"] = "交错洞窟 (进阶)"
     L["RACE_72750"] = "交错洞窟 (反向)"
 
-    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best is "..time.." seconds"; end
+    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
     L["RACE_FINISHED_FORMAT"] = function(race, time) return "你完成 "..race.." 用时 "..time.." 秒"; end
     L["RACE_RECAP_FORMAT"] = function(race, time) return "> |cffffd700"..race.."|r in |cffffd700"..time.."|r 秒"; end
     L["RACE_TIME_FORMAT"] = function(time) return time.." 秒"; end
