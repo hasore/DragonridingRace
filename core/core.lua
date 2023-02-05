@@ -203,10 +203,9 @@ function DRR:OnQuestRemoved(event, questId)
 
     local currencyPb = currencyInfo.quantity;
     local savedPb = DRR.db.global.pb[questId];
-    local fallback = DRR.db.global.options.fallback;
 
     if not savedPb then
-        if fallback then -- fallback to OnMonsterSay
+        if DRR.db.global.options.fallback then -- fallback to OnMonsterSay
             DRR.CURRENT_RACE_CURRENCY = nil
         else
             DRR:OnRaceEndedSavedBest(race, currencyPb);
@@ -226,15 +225,13 @@ function DRR:OnQuestRemoved(event, questId)
 
     if currencyPb < savedPb then
         DRR:EndRace(currencyPb);
-    elseif not DRR:Failed() then
-        if fallback then -- fallback to OnMonsterSay
+    else
+        if DRR.db.global.options.fallback then -- fallback to OnMonsterSay
             DRR.CURRENT_RACE_CURRENCY = nil
-        else
+        elseif not DRR:Failed() then
             DRR:OnRaceEndedSavedBest(race, currencyPb);
             DRR:TrySetScoreOnly(currencyPb);
         end
-    elseif fallback then -- fallback to OnMonsterSay
-        DRR.CURRENT_RACE_CURRENCY = nil
     end
 end
 
