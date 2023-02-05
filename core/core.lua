@@ -8,7 +8,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale(addonName, true);
 local DRR = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "AceEvent-3.0", "AceConsole-3.0", "AceComm-3.0", "AceTimer-3.0");
 
 -- CONFIGURATION
-DRR.version = "0.2.1";
+DRR.version = "0.3.1";
 --DRR.version = "dev";
 DRR.versionAlertSent = false
 
@@ -70,6 +70,7 @@ function DRR:OnEnable()
     -- hook to events
     DRR:RegisterComm(DRR.COMM_PREFIX);
     DRR:RegisterEvent("QUEST_ACCEPTED", "OnQuestAccepted");
+    DRR:RegisterEvent("QUEST_REMOVED", "OnQuestRemoved");
     DRR:RegisterEvent("CHAT_MSG_MONSTER_SAY", "OnMonsterSay");
 
     -- say hello
@@ -171,6 +172,49 @@ function DRR:OnQuestAccepted(event, questId)
         if race then
             DRR:StartRace(race);
         end
+    end
+end
+
+function DRR:OnQuestRemoved(event, questId)
+    if not questId or DRR.USE_CURRENCY == 0 then
+        return
+    end
+
+    local race = DRR.CURRENT_RACE;
+
+    if not race or race.id ~= questId then
+        return
+    end
+
+    local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(DRR.USE_CURRENCY)
+
+    if not currencyInfo then
+        return
+    end
+
+    local currencyPb = currencyInfo.quantity
+    local savedPb = DRR.db.global.pb[questId]
+
+    if not savedPb then
+        DRR:OnRaceEndedSavedBest(race, currencyPb);
+        DRR:TrySetScoreOnly(currencyPb)
+        return
+    end
+
+    -- Normalize currencyPb to a float with 3 decimals
+    currencyPb = currencyPb * 0.001
+    currencyPb = string.format("%.3f", currencyPb)    
+    currencyPb = tonumber(currencyPb)
+
+    -- Normalize savedPb to a float with 3 decimals
+    savedPb = string.format("%.3f", savedPb)    
+    savedPb = tonumber(savedPb)
+
+    if currencyPb < savedPb then
+        DRR:EndRace(currencyPb);
+    else
+        DRR:OnRaceEndedSavedBest(race, currencyPb);
+        DRR:TrySetScoreOnly(currencyPb)
     end
 end
 
