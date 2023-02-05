@@ -11,6 +11,9 @@ if L then
     L["ADDON_MOTD"] = "Oi, obrigado por usar "..addonName.."! Digite |cffffd700/drr|r para ver seus melhores tempos!";
     L["DATE_FORMAT"] = "%d/%m/%y";
  
+    L["FALLBACK_ENABLED"] = "Chamada de metodo alternativo em caso de falha foi ativada.";
+    L["FALLBACK_DISABLED"] = "Chamada de metodo alternativo em caso de falha foi desativada.";
+ 
     L["UI_PB_TITLE"] = "Seus melhores tempos"
     L["UI_PB_HEADER_RACE"] = "|cffffd700Circuito|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700Tempo (normal)|r"
@@ -24,6 +27,7 @@ if L then
     L["GUILD_BEST_BEATEN"] = function(time, race, character) return character.." superou o tempo da guilda em "..race.." por "..time.." segundos!"; end
     L["RACE_FINISHED_GUILD_PB_FORMAT"] = function(race, time) return "Você superou o melhor tempo da guilda em  "..race.." completando em "..time.." segundos!"; end
  
+    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "Você terminou "..race..", o seu recorde atual é de "..time.." segundos"; end
     L["RACE_FINISHED_FORMAT"] = function(race, time) return "Você terminou "..race.." em "..time.." segundos"; end
     L["RACE_FINISHED_PB_FORMAT"] = function(race, time, previousTime) return "Wow, você quebrou seu recorde em  "..race.." terminando em "..time.." segundos! Seu recorde anterior era "..previousTime.." segundos"; end
     L["RACE_RECAP_FORMAT"] = function(race, time) return "> |cffffd700"..race.."|r in |cffffd700"..time.."|r seconds"; end

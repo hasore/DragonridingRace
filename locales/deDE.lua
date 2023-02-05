@@ -11,12 +11,16 @@ if L then
     L["ADDON_MOTD"] = "Hey, danke das du "..addonName.." benutzt! Tippe |cffffd700/drr|r um deine persönlichen Bestzeiten zu sehen!";
     L["DATE_FORMAT"] = "%d.%m.%y";
 
+    L["FALLBACK_ENABLED"] = "Use of alternative method on event of failure is now enabled.";
+    L["FALLBACK_DISABLED"] = "Use of alternative method on event of failure is now disabled.";
+
     L["UI_PB_TITLE"] = "Deine persönlichen Bestzeiten"
     L["UI_PB_HEADER_RACE"] = "|cffffd700Rennen|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700Bestzeit (normal)|r"
     L["UI_PB_HEADER_PB_A"] = "|cffffd700Bestzeit (fortgeschritten)|r"
     L["UI_PB_HEADER_PB_R"] = "|cffffd700Bestzeit (umgekehrt)|r"
 
+    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best is "..time.." seconds"; end
     L["RACE_FINISHED_FORMAT"] = function(race, time) return "Du hast "..race.." in "..time.." Sekunden beendet"; end
     L["RACE_FINISHED_PB_FORMAT"] = function(race, time, previousTime) return "Wow, du hast deinen  "..race.." gebrochen, indem du ihn in "..time.." Sekunden gemessen hast! Es ist verrückt! Ihre bisherige Bestzeit war "..previousTime.." Sekunden."; end
     L["RACE_RECAP_FORMAT"] = function(race, time) return "> |cffffd700"..race.."|r in |cffffd700"..time.."|r Sekunden"; end

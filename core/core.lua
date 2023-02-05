@@ -8,7 +8,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale(addonName, true);
 local DRR = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "AceEvent-3.0", "AceConsole-3.0", "AceComm-3.0", "AceTimer-3.0");
 
 -- CONFIGURATION
-DRR.version = "0.3.5";
+DRR.version = "0.3.6";
 --DRR.version = "dev";
 DRR.versionAlertSent = false
 
@@ -296,4 +296,11 @@ end
 
 function DRR:ToggleFallback()
     DRR.db.global.options.fallback = not DRR.db.global.options.fallback
+    local msg = L["FALLBACK_DISABLED"]
+
+    if DRR.db.global.options.fallback then
+        msg = L["FALLBACK_ENABLED"]
+    end
+
+    DRR:Print(msg)
 end

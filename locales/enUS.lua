@@ -11,6 +11,9 @@ if L then
     L["ADDON_MOTD"] = "Hey, thanks for using "..addonName.."! Type |cffffd700/drr|r to see your personal best times!";
     L["DATE_FORMAT"] = "%m/%d/%y";
 
+    L["FALLBACK_ENABLED"] = "Use of alternative method on event of failure is now enabled.";
+    L["FALLBACK_DISABLED"] = "Use of alternative method on event of failure is now disabled.";
+
     L["UI_PB_TITLE"] = "Your best times"
     L["UI_PB_HEADER_RACE"] = "|cffffd700Race|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700Time (normal)|r"

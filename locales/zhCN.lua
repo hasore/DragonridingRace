@@ -11,6 +11,9 @@ if L then
     L["ADDON_MOTD"] = "感谢使用|cFFff638a"..addonName.."！|r\n你可以输入 |cffffd700/drr|r 来查看你的驭龙竞速计时板！";
     L["DATE_FORMAT"] = "%y/%m/%d";
 
+    L["FALLBACK_ENABLED"] = "Use of alternative method on event of failure is now enabled.";
+    L["FALLBACK_DISABLED"] = "Use of alternative method on event of failure is now disabled.";
+
     L["UI_PB_TITLE"] = "你的最佳时间"
     L["UI_PB_HEADER_RACE"] = "|cffffd700赛道|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700时间 (普通)|r"
@@ -103,6 +106,7 @@ if L then
     L["RACE_70163"] = "交错洞窟 (进阶)"
     L["RACE_72750"] = "交错洞窟 (反向)"
 
+    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best is "..time.." seconds"; end
     L["RACE_FINISHED_FORMAT"] = function(race, time) return "你完成 "..race.." 用时 "..time.." 秒"; end
     L["RACE_RECAP_FORMAT"] = function(race, time) return "> |cffffd700"..race.."|r in |cffffd700"..time.."|r 秒"; end
     L["RACE_TIME_FORMAT"] = function(time) return time.." 秒"; end
