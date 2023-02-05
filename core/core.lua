@@ -78,6 +78,7 @@ function DRR:OnEnable()
     -- say hello
     DRR:Print(L["ADDON_MOTD"]);
 
+    DRR:Fallback();
     DRR:SendPing();
     DRR:SendAskPBS();
     DRR:SendAllPBs();
@@ -120,7 +121,7 @@ function DRR:OnSlashCommand(input)
         if "ping" == command then
             DRR:SendPing();
         elseif "fallback" == command then
-            DRR:ToggleFallback();
+            DRR:Fallback(true);
         elseif "last" == command then
             local count = table.getn(DRR.db.global.races);
             local max = count - 10;
@@ -291,8 +292,11 @@ function DRR:Debug(message)
     end
 end
 
-function DRR:ToggleFallback()
-    DRR.db.global.options.fallback = not DRR.db.global.options.fallback
+function DRR:Fallback(toggle)
+    if toggle then
+        DRR.db.global.options.fallback = not DRR.db.global.options.fallback
+    end
+
     local msg = L["FALLBACK_DISABLED"]
 
     if DRR.db.global.options.fallback then
