@@ -201,7 +201,6 @@ function DRR:TrySetScoreOnly(time)
         local isGuildPB = DRR:TrySetGuildBest(raceTime);
 
         DRR.CURRENT_RACE = nil;
-        DRR.LAST_RACE = race;
     else
         DRR:PrintError("Could not locate current course");
     end
