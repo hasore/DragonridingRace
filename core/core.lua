@@ -8,7 +8,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale(addonName, true);
 local DRR = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "AceEvent-3.0", "AceConsole-3.0", "AceComm-3.0", "AceTimer-3.0");
 
 -- CONFIGURATION
-DRR.version = "0.3.6";
+DRR.version = "0.3.7";
 --DRR.version = "dev";
 DRR.versionAlertSent = false
 
@@ -209,7 +209,7 @@ function DRR:OnQuestRemoved(event, questId)
         if DRR.db.global.options.fallback then -- fallback to OnMonsterSay
             DRR.CURRENT_RACE_CURRENCY = nil
         else
-            DRR:OnRaceEndedSavedBest(race, currencyPb);
+            DRR:OnRaceEndedCharacterBest(race, currencyPb);
             DRR:TrySetScoreOnly(currencyPb);
         end
         return
@@ -230,7 +230,7 @@ function DRR:OnQuestRemoved(event, questId)
         if DRR.db.global.options.fallback then -- fallback to OnMonsterSay
             DRR.CURRENT_RACE_CURRENCY = nil
         elseif not DRR:Failed() then
-            DRR:OnRaceEndedSavedBest(race, currencyPb);
+            DRR:OnRaceEndedSavedBest(race, currencyPb, savedPb);
             DRR:TrySetScoreOnly(currencyPb);
         end
     end

@@ -247,8 +247,12 @@ function DRR:OnRaceEnded(race, raceTime)
 end
 
 
-function DRR:OnRaceEndedSavedBest(race, time)
-    DRR:Print(L["RACE_FINISHED_SAVED_BEST_FORMAT"](race.name, time));
+function DRR:OnRaceEndedCharacterBest(race, time)
+    DRR:Print(L["RACE_FINISHED_CHARACTER_BEST_FORMAT"](race.name, time));
+end
+
+function DRR:OnRaceEndedSavedBest(race, time, saved)
+    DRR:Print(L["RACE_FINISHED_SAVED_BEST_FORMAT"](race.name, time, saved));
 end
 
 function DRR:OnPBBeaten(race, raceTime, previousTime)

@@ -20,7 +20,8 @@ if L then
     L["UI_PB_HEADER_PB_A"] = "|cffffd700Bestzeit (fortgeschritten)|r"
     L["UI_PB_HEADER_PB_R"] = "|cffffd700Bestzeit (umgekehrt)|r"
 
-    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
+    L["RACE_FINISHED_CHARACTER_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
+    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time, saved) return "You finished "..race..", current personal best in this character is "..time.." seconds, local saved best is "..saved.." seconds"; end
     L["RACE_FINISHED_FORMAT"] = function(race, time) return "Du hast "..race.." in "..time.." Sekunden beendet"; end
     L["RACE_FINISHED_PB_FORMAT"] = function(race, time, previousTime) return "Wow, du hast deinen  "..race.." gebrochen, indem du ihn in "..time.." Sekunden gemessen hast! Es ist verrückt! Ihre bisherige Bestzeit war "..previousTime.." Sekunden."; end
     L["RACE_RECAP_FORMAT"] = function(race, time) return "> |cffffd700"..race.."|r in |cffffd700"..time.."|r Sekunden"; end

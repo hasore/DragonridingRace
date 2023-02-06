@@ -113,7 +113,8 @@ if L then
     L["RACE_70163"] = "Caverns Criss-Cross (advanced)"
     L["RACE_72750"] = "Caverns Criss-Cross (reverse)"
 
-    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
+    L["RACE_FINISHED_CHARACTER_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
+    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time, saved) return "You finished "..race..", current personal best in this character is "..time.." seconds, local saved best is "..saved.." seconds"; end
     L["RACE_FINISHED_FORMAT"] = function(race, time) return "You finished "..race.." in "..time.." seconds"; end
     L["RACE_FINISHED_PB_FORMAT"] = function(race, time, previousTime) return "Wow, you broke your record on  "..race.." by timing it in "..time.." seconds! That's insane! Your previous best time was "..previousTime.." seconds"; end
     L["RACE_RECAP_FORMAT"] = function(race, time) return "> |cffffd700"..race.."|r in |cffffd700"..time.."|r seconds"; end

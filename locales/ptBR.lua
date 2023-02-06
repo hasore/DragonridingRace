@@ -27,7 +27,8 @@ if L then
     L["GUILD_BEST_BEATEN"] = function(time, race, character) return character.." superou o tempo da guilda em "..race.." por "..time.." segundos!"; end
     L["RACE_FINISHED_GUILD_PB_FORMAT"] = function(race, time) return "Você superou o melhor tempo da guilda em  "..race.." completando em "..time.." segundos!"; end
  
-    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time) return "Você terminou "..race..", o seu recorde atual neste personagem é de "..time.." segundos"; end
+    L["RACE_FINISHED_CHARACTER_BEST_FORMAT"] = function(race, time) return "Você terminou "..race..", o seu recorde atual neste personagem é de "..time.." segundos"; end
+    L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time, saved) return "Você terminou "..race..", o seu recorde atual neste personagem é de "..time.." segundos, recorde salvo localmente de "..saved.." segundos"; end
     L["RACE_FINISHED_FORMAT"] = function(race, time) return "Você terminou "..race.." em "..time.." segundos"; end
     L["RACE_FINISHED_PB_FORMAT"] = function(race, time, previousTime) return "Wow, você quebrou seu recorde em  "..race.." terminando em "..time.." segundos! Seu recorde anterior era "..previousTime.." segundos"; end
     L["RACE_RECAP_FORMAT"] = function(race, time) return "> |cffffd700"..race.."|r in |cffffd700"..time.."|r seconds"; end
