@@ -4,7 +4,7 @@
 ## Notes: Save your best dragonriding course's times and compete with your friends!
 ## Notes-frFR: Enregistre tes meilleurs temps et entre en compétition avec tes amis !
 ## Author: Tzinn
-## Version: 0.3.7
+## Version: 0.3.8
 ## SavedVariables: DRRDB
 ## X-License: WTFPL
 
@@ -16,6 +16,7 @@ locales/deDE.lua
 locales/zhCN.lua
 locales/ptPT.lua
 locales/ptBR.lua
+locales/ruRU.lua
 
 core/core.lua
 core/communication.lua
