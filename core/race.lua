@@ -118,29 +118,29 @@ table.insert(DRR.Races, {id = 72750, currency = 2199, name = L["RACE_72750"], ra
 
 -- Forbidden Reach, currency = nil
 -- Stormsunder Crate Circuit
-table.insert(DRR.Races, {id = 73017, currency = 2080, name = L["RACE_73017"], raceType = 0, gold = 43});
-table.insert(DRR.Races, {id = 73018, currency = 2081, name = L["RACE_73018"], raceType = 1, gold = 42});
-table.insert(DRR.Races, {id = 73019, currency = 2194, name = L["RACE_73019"], raceType = 2, gold = 42});
+table.insert(DRR.Races, {id = 73017, currency = 2201, name = L["RACE_73017"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 73018, currency = 2207, name = L["RACE_73018"], raceType = 1, gold = 42});
+table.insert(DRR.Races, {id = 73019, currency = 2213, name = L["RACE_73019"], raceType = 2, gold = 42});
 -- Morqut Ascent
-table.insert(DRR.Races, {id = 73020, currency = 2080, name = L["RACE_73020"], raceType = 0, gold = 43});
-table.insert(DRR.Races, {id = 73023, currency = 2081, name = L["RACE_73023"], raceType = 1, gold = 42});
-table.insert(DRR.Races, {id = 73024, currency = 2194, name = L["RACE_73024"], raceType = 2, gold = 42});
+table.insert(DRR.Races, {id = 73020, currency = 2202, name = L["RACE_73020"], raceType = 0, gold = 52});
+table.insert(DRR.Races, {id = 73023, currency = 2208, name = L["RACE_73023"], raceType = 1, gold = 49});
+table.insert(DRR.Races, {id = 73024, currency = 2214, name = L["RACE_73024"], raceType = 2, gold = 52});
 -- Aerie Chasm Cruise
-table.insert(DRR.Races, {id = 73025, currency = 2080, name = L["RACE_73025"], raceType = 0, gold = 43});
-table.insert(DRR.Races, {id = 73027, currency = 2081, name = L["RACE_73027"], raceType = 1, gold = 42});
-table.insert(DRR.Races, {id = 73028, currency = 2194, name = L["RACE_73028"], raceType = 2, gold = 42});
+table.insert(DRR.Races, {id = 73025, currency = 2203, name = L["RACE_73025"], raceType = 0, gold = 58});
+table.insert(DRR.Races, {id = 73027, currency = 2209, name = L["RACE_73027"], raceType = 1, gold = 52});
+table.insert(DRR.Races, {id = 73028, currency = 2215, name = L["RACE_73028"], raceType = 2, gold = 49});
 -- Southern Reach Route
-table.insert(DRR.Races, {id = 73029, currency = 2080, name = L["RACE_73029"], raceType = 0, gold = 43});
-table.insert(DRR.Races, {id = 73030, currency = 2081, name = L["RACE_73030"], raceType = 1, gold = 42});
-table.insert(DRR.Races, {id = 73032, currency = 2194, name = L["RACE_73032"], raceType = 2, gold = 42});
+table.insert(DRR.Races, {id = 73029, currency = 2204, name = L["RACE_73029"], raceType = 0, gold = 70});
+table.insert(DRR.Races, {id = 73030, currency = 2210, name = L["RACE_73030"], raceType = 1, gold = 68});
+table.insert(DRR.Races, {id = 73032, currency = 2216, name = L["RACE_73032"], raceType = 2, gold = 63});
 -- Caldera Coaster
-table.insert(DRR.Races, {id = 73033, currency = 2080, name = L["RACE_73033"], raceType = 0, gold = 43});
-table.insert(DRR.Races, {id = 73034, currency = 2081, name = L["RACE_73034"], raceType = 1, gold = 42});
-table.insert(DRR.Races, {id = 73052, currency = 2194, name = L["RACE_73052"], raceType = 2, gold = 42});
+table.insert(DRR.Races, {id = 73033, currency = 2205, name = L["RACE_73033"], raceType = 0, gold = 58});
+table.insert(DRR.Races, {id = 73034, currency = 2211, name = L["RACE_73034"], raceType = 1, gold = 52});
+table.insert(DRR.Races, {id = 73052, currency = 2217, name = L["RACE_73052"], raceType = 2, gold = 49});
 -- Forbidden Reach Rush
-table.insert(DRR.Races, {id = 73061, currency = 2080, name = L["RACE_73061"], raceType = 0, gold = 43});
-table.insert(DRR.Races, {id = 73062, currency = 2081, name = L["RACE_73062"], raceType = 1, gold = 42});
-table.insert(DRR.Races, {id = 73064, currency = 2194, name = L["RACE_73064"], raceType = 2, gold = 42});
+table.insert(DRR.Races, {id = 73061, currency = 2206, name = L["RACE_73061"], raceType = 0, gold = 59});
+table.insert(DRR.Races, {id = 73062, currency = 2212, name = L["RACE_73062"], raceType = 1, gold = 56});
+table.insert(DRR.Races, {id = 73064, currency = 2218, name = L["RACE_73064"], raceType = 2, gold = 57});
 
 
 DRR.CURRENT_RACE = nil;
