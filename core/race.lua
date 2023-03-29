@@ -235,7 +235,7 @@ end
 function DRR:TrySetPB(raceTime)
     local pb = DRR.db.global.pb[raceTime.race];
 
-    if pb == nil then
+    if pb == nil or pb == 0 then
         DRR.db.global.pb[raceTime.race] = raceTime.time;
         -- Share to the world
         DRR:SendPB(raceTime);

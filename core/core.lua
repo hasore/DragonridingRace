@@ -208,6 +208,21 @@ function DRR:OnQuestRemoved(event, questId)
     local currencyPb = currencyInfo.quantity;
     local savedPb = DRR.db.global.pb[questId];
 
+    -- Normalize currencyPb to a float with 3 decimals
+    currencyPb = currencyPb * 0.001;
+    currencyPb = string.format("%.3f", currencyPb);
+    currencyPb = tonumber(currencyPb);
+
+    if savedPb == 0 then
+        savedPb = nil;
+    end
+
+    if savedPb ~= nil then
+        -- Normalize savedPb to a float with 3 decimals
+        savedPb = string.format("%.3f", savedPb);
+        savedPb = tonumber(savedPb);
+    end
+
     if not savedPb then
         if DRR.db.global.options.fallback then -- fallback to OnMonsterSay
             DRR.CURRENT_RACE_CURRENCY = nil
@@ -217,15 +232,6 @@ function DRR:OnQuestRemoved(event, questId)
         end
         return
     end
-
-    -- Normalize currencyPb to a float with 3 decimals
-    currencyPb = currencyPb * 0.001;
-    currencyPb = string.format("%.3f", currencyPb);
-    currencyPb = tonumber(currencyPb)
-;
-    -- Normalize savedPb to a float with 3 decimals
-    savedPb = string.format("%.3f", savedPb);
-    savedPb = tonumber(savedPb);
 
     if currencyPb < savedPb then
         DRR:EndRace(currencyPb);
