@@ -27,7 +27,7 @@ Features to come:
   - Show last races information
 
 ## Preview
-![Wow_ATx4mkva8N](https://user-images.githubusercontent.com/1711517/214788028-70a9150a-90f4-4bf5-96b6-cd9af943c1b4.png)
+![image](https://user-images.githubusercontent.com/1711517/228683129-9b14f56a-38c9-4d67-86de-4cbb6be41c07.png)
 
 ## Contributors
 
