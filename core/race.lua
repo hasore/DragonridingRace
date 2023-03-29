@@ -116,6 +116,32 @@ table.insert(DRR.Races, {id = 70161, currency = 2103, name = L["RACE_70161"], ra
 table.insert(DRR.Races, {id = 70163, currency = 2104, name = L["RACE_70163"], raceType = 1, gold = 45});
 table.insert(DRR.Races, {id = 72750, currency = 2199, name = L["RACE_72750"], raceType = 2, gold = 47});
 
+-- Forbidden Reach, currency = nil
+-- Stormsunder Crate Circuit
+table.insert(DRR.Races, {id = 73017, currency = 2080, name = L["RACE_73017"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 73018, currency = 2081, name = L["RACE_73018"], raceType = 1, gold = 42});
+table.insert(DRR.Races, {id = 73019, currency = 2194, name = L["RACE_73019"], raceType = 2, gold = 42});
+-- Morqut Ascent
+table.insert(DRR.Races, {id = 73020, currency = 2080, name = L["RACE_73020"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 73023, currency = 2081, name = L["RACE_73023"], raceType = 1, gold = 42});
+table.insert(DRR.Races, {id = 73024, currency = 2194, name = L["RACE_73024"], raceType = 2, gold = 42});
+-- Aerie Chasm Cruise
+table.insert(DRR.Races, {id = 73025, currency = 2080, name = L["RACE_73025"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 73027, currency = 2081, name = L["RACE_73027"], raceType = 1, gold = 42});
+table.insert(DRR.Races, {id = 73028, currency = 2194, name = L["RACE_73028"], raceType = 2, gold = 42});
+-- Southern Reach Route
+table.insert(DRR.Races, {id = 73029, currency = 2080, name = L["RACE_73029"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 73030, currency = 2081, name = L["RACE_73030"], raceType = 1, gold = 42});
+table.insert(DRR.Races, {id = 73032, currency = 2194, name = L["RACE_73032"], raceType = 2, gold = 42});
+-- Caldera Coaster
+table.insert(DRR.Races, {id = 73033, currency = 2080, name = L["RACE_73033"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 73034, currency = 2081, name = L["RACE_73034"], raceType = 1, gold = 42});
+table.insert(DRR.Races, {id = 73052, currency = 2194, name = L["RACE_73052"], raceType = 2, gold = 42});
+-- Forbidden Reach Rush
+table.insert(DRR.Races, {id = 73061, currency = 2080, name = L["RACE_73061"], raceType = 0, gold = 43});
+table.insert(DRR.Races, {id = 73062, currency = 2081, name = L["RACE_73062"], raceType = 1, gold = 42});
+table.insert(DRR.Races, {id = 73064, currency = 2194, name = L["RACE_73064"], raceType = 2, gold = 42});
+
 
 DRR.CURRENT_RACE = nil;
 DRR.CURRENT_RACE_CURRENCY = nil;

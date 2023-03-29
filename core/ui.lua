@@ -12,6 +12,7 @@ function DRR:AddAllPB(container)
     DRR:AddOhnahranPlainsPB(container);
     DRR:AddAzureSpanPB(container);
     DRR:AddThaldraszusPB(container);
+    DRR:AddForbiddenReachPB(container);
     --container:DoLayout();
 end
 
@@ -85,6 +86,20 @@ function DRR:AddThaldraszusPB(container)
         {normal = 70059, advanced = 70060, reverse = 72754},
         {normal = 70157, advanced = 70158, reverse = 72769},
         {normal = 70161, advanced = 70163, reverse = 72750},
+    };
+    DRR:AddPBLine_Table(races, container);
+end
+
+function DRR:AddForbiddenReachPB(container)
+    DRR:AddPBZoneHeader(L["ZONE_FORBIDDENREACH"], container)
+    DRR:AddPBHeader(container);
+    local races = {
+        {normal = 73017, advanced = 73018, reverse = 73019},
+        {normal = 73020, advanced = 73023, reverse = 73024},
+        {normal = 73025, advanced = 73027, reverse = 73028},
+        {normal = 73029, advanced = 73030, reverse = 73032},
+        {normal = 73033, advanced = 73034, reverse = 73052},
+        {normal = 73061, advanced = 73062, reverse = 73064},
     };
     DRR:AddPBLine_Table(races, container);
 end

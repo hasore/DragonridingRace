@@ -31,6 +31,7 @@ if L then
     L["ZONE_OHNAHRAN_PLAINS"] = "Ohn'Ahran Plains"
     L["ZONE_AZURE_SPAN"] = "Azure Span"
     L["ZONE_THALDRASZUS"] = "Thaldraszus"
+    L["ZONE_FORBIDDENREACH"] = "The Forbidden Reach"
 
     L["RACE_66679"] = "Ruby Lifeshrine Loop"
     L["RACE_66692"] = "Ruby Lifeshrine Loop (advanced)"
@@ -112,6 +113,25 @@ if L then
     L["RACE_70161"] = "Caverns Criss-Cross"
     L["RACE_70163"] = "Caverns Criss-Cross (advanced)"
     L["RACE_72750"] = "Caverns Criss-Cross (reverse)"
+
+    L["RACE_73017"] = "Stormsunder Crate Circuit"
+    L["RACE_73018"] = "Stormsunder Crate Circuit (advanced)"
+    L["RACE_73019"] = "Stormsunder Crate Circuit (reverse)"
+    L["RACE_73020"] = "Morqut Ascent"
+    L["RACE_73023"] = "Morqut Ascent (advanced)"
+    L["RACE_73024"] = "Morqut Ascent (reverse)"
+    L["RACE_73025"] = "Aerie Chasm Cruise"
+    L["RACE_73027"] = "Aerie Chasm Cruise (advanced)"
+    L["RACE_73028"] = "Aerie Chasm Cruise (reverse)"
+    L["RACE_73029"] = "Southern Reach Route"
+    L["RACE_73030"] = "Southern Reach Route (advanced)"
+    L["RACE_73032"] = "Southern Reach Route (reverse)"
+    L["RACE_73033"] = "Caldera Coaster"
+    L["RACE_73034"] = "Caldera Coaster (advanced)"
+    L["RACE_73052"] = "Caldera Coaster (reverse)"
+    L["RACE_73061"] = "Forbidden Reach Rush"
+    L["RACE_73062"] = "Forbidden Reach Rush (advanced)"
+    L["RACE_73064"] = "Forbidden Reach Rush (reverse)"
 
     L["RACE_FINISHED_CHARACTER_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
     L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time, saved) return "You finished "..race..", current personal best in this character is "..time.." seconds, local saved best is "..saved.." seconds"; end

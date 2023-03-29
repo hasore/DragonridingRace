@@ -8,7 +8,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale(addonName, true);
 local DRR = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "AceEvent-3.0", "AceConsole-3.0", "AceComm-3.0", "AceTimer-3.0");
 
 -- CONFIGURATION
-DRR.version = "0.3.8";
+DRR.version = "0.2.1";
 --DRR.version = "dev";
 DRR.versionAlertSent = false
 
@@ -177,6 +177,8 @@ function DRR:OnMonsterSay(event, message, npc)
 end
 
 function DRR:OnQuestAccepted(event, questId)
+    DRR:Debug("Quest accepted: ".. questId);
+    DRR:Debug(GetNumRewardCurrencies());
     if questId then
         local race = DRR:GetRace(questId);
         if race then
@@ -186,6 +188,7 @@ function DRR:OnQuestAccepted(event, questId)
 end
 
 function DRR:OnQuestRemoved(event, questId)
+    DRR:Debug(GetNumRewardCurrencies());
     if not DRR.CURRENT_RACE_CURRENCY or not DRR.CURRENT_RACE then
         return
     end
