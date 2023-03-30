@@ -10,6 +10,11 @@ local MESSAGE_SEND_PB = "SEND_PB";
 
 -- send comm message to all addon owners in the guild
 function DRR:SendComm(message)
+    -- since the addon only support guilds, checking if the player is in a guild in order to avoid annoying chat messages
+    if not IsInGuild() then
+        return;
+    end
+
     DRR:SendCommMessage(DRR.COMM_PREFIX, message, DRR.COMM_CHANNEL);
     DRR:Debug("Comm Sent // ".. message);
 end
