@@ -13,6 +13,7 @@ function DRR:AddAllPB(container)
     DRR:AddAzureSpanPB(container);
     DRR:AddThaldraszusPB(container);
     DRR:AddForbiddenReachPB(container);
+    DRR:AddZaralekCavernPB(container);
     --container:DoLayout();
 end
 
@@ -100,6 +101,20 @@ function DRR:AddForbiddenReachPB(container)
         {normal = 73029, advanced = 73030, reverse = 73032},
         {normal = 73033, advanced = 73034, reverse = 73052},
         {normal = 73061, advanced = 73062, reverse = 73064},
+    };
+    DRR:AddPBLine_Table(races, container);
+end
+
+function DRR:AddZaralekCavernPB(container)
+    DRR:AddPBZoneHeader(L["ZONE_ZARALEKCAVERN"], container)
+    DRR:AddPBHeader(container);
+    local races = {
+        {normal = 74839, advanced = 74842, reverse = 74882},
+        {normal = 74889, advanced = 74899, reverse = 74925},
+        {normal = 74939, advanced = 74943, reverse = 74944},
+        {normal = 74951, advanced = 74954, reverse = 74956},
+        {normal = 74972, advanced = 74975, reverse = 74977},
+        {normal = 75035, advanced = 75042, reverse = 75043},
     };
     DRR:AddPBLine_Table(races, container);
 end
