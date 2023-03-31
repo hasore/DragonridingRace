@@ -114,9 +114,9 @@ if L then
     L["RACE_70163"] = "Caverns Criss-Cross (advanced)"
     L["RACE_72750"] = "Caverns Criss-Cross (reverse)"
 
-    L["RACE_73017"] = "Stormsunder Crate Circuit"
-    L["RACE_73018"] = "Stormsunder Crate Circuit (advanced)"
-    L["RACE_73019"] = "Stormsunder Crate Circuit (reverse)"
+    L["RACE_73017"] = "Stormsunder Crater Circuit"
+    L["RACE_73018"] = "Stormsunder Crater Circuit (advanced)"
+    L["RACE_73019"] = "Stormsunder Crater Circuit (reverse)"
     L["RACE_73020"] = "Morqut Ascent"
     L["RACE_73023"] = "Morqut Ascent (advanced)"
     L["RACE_73024"] = "Morqut Ascent (reverse)"
