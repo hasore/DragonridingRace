@@ -99,7 +99,7 @@ function DRR:AddForbiddenReachPB(container)
         {normal = 73025, advanced = 73027, reverse = 73028},
         {normal = 73029, advanced = 73030, reverse = 73032},
         {normal = 73033, advanced = 73034, reverse = 73052},
-        {normal = 73061, advanced = 73062, reverse = 73064},
+        {normal = 73061, advanced = 73062, reverse = 73065},
     };
     DRR:AddPBLine_Table(races, container);
 end

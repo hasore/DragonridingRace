@@ -140,7 +140,7 @@ table.insert(DRR.Races, {id = 73052, currency = 2217, name = L["RACE_73052"], ra
 -- Forbidden Reach Rush
 table.insert(DRR.Races, {id = 73061, currency = 2206, name = L["RACE_73061"], raceType = 0, gold = 59});
 table.insert(DRR.Races, {id = 73062, currency = 2212, name = L["RACE_73062"], raceType = 1, gold = 56});
-table.insert(DRR.Races, {id = 73064, currency = 2218, name = L["RACE_73064"], raceType = 2, gold = 57});
+table.insert(DRR.Races, {id = 73065, currency = 2218, name = L["RACE_73065"], raceType = 2, gold = 57});
 
 
 DRR.CURRENT_RACE = nil;

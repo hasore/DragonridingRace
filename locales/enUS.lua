@@ -131,7 +131,7 @@ if L then
     L["RACE_73052"] = "Caldera Coaster (reverse)"
     L["RACE_73061"] = "Forbidden Reach Rush"
     L["RACE_73062"] = "Forbidden Reach Rush (advanced)"
-    L["RACE_73064"] = "Forbidden Reach Rush (reverse)"
+    L["RACE_73065"] = "Forbidden Reach Rush (reverse)"
 
     L["RACE_FINISHED_CHARACTER_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
     L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time, saved) return "You finished "..race..", current personal best in this character is "..time.." seconds, local saved best is "..saved.." seconds"; end
