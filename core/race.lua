@@ -127,8 +127,8 @@ table.insert(DRR.Races, {id = 73023, currency = 2208, name = L["RACE_73023"], ra
 table.insert(DRR.Races, {id = 73024, currency = 2214, name = L["RACE_73024"], raceType = 2, gold = 52});
 -- Aerie Chasm Cruise
 table.insert(DRR.Races, {id = 73025, currency = 2203, name = L["RACE_73025"], raceType = 0, gold = 58});
-table.insert(DRR.Races, {id = 73027, currency = 2209, name = L["RACE_73027"], raceType = 1, gold = 52});
-table.insert(DRR.Races, {id = 73028, currency = 2215, name = L["RACE_73028"], raceType = 2, gold = 49});
+table.insert(DRR.Races, {id = 73027, currency = 2209, name = L["RACE_73027"], raceType = 1, gold = 50});
+table.insert(DRR.Races, {id = 73028, currency = 2215, name = L["RACE_73028"], raceType = 2, gold = 50});
 -- Southern Reach Route
 table.insert(DRR.Races, {id = 73029, currency = 2204, name = L["RACE_73029"], raceType = 0, gold = 70});
 table.insert(DRR.Races, {id = 73030, currency = 2210, name = L["RACE_73030"], raceType = 1, gold = 68});
