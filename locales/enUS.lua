@@ -32,6 +32,7 @@ if L then
     L["ZONE_AZURE_SPAN"] = "Azure Span"
     L["ZONE_THALDRASZUS"] = "Thaldraszus"
     L["ZONE_FORBIDDENREACH"] = "The Forbidden Reach"
+    L["ZONE_ZARALEKCAVERN"] = "Zaralek Cavern"
 
     L["RACE_66679"] = "Ruby Lifeshrine Loop"
     L["RACE_66692"] = "Ruby Lifeshrine Loop (advanced)"
@@ -132,6 +133,25 @@ if L then
     L["RACE_73061"] = "Forbidden Reach Rush"
     L["RACE_73062"] = "Forbidden Reach Rush (advanced)"
     L["RACE_73065"] = "Forbidden Reach Rush (reverse)"
+
+    L["RACE_74839"] = "Crystal Circuit"
+    L["RACE_74842"] = "Crystal Circuit (advanced)"
+    L["RACE_74882"] = "Crystal Circuit (reverse)"
+    L["RACE_74889"] = "Caldera Cruise"
+    L["RACE_74899"] = "Caldera Cruise (advanced)"
+    L["RACE_74925"] = "Caldera Cruise (reverse)"
+    L["RACE_74939"] = "Brimstone Scramble"
+    L["RACE_74943"] = "Brimstone Scramble (advanced)"
+    L["RACE_74944"] = "Brimstone Scramble (reverse)"
+    L["RACE_74951"] = "Shimmering Slalom"
+    L["RACE_74954"] = "Shimmering Slalom (advanced)"
+    L["RACE_74956"] = "Shimmering Slalom (reverse)"
+    L["RACE_74972"] = "Zaralek Zigzag"
+    L["RACE_74975"] = "Zaralek Zigzag (advanced)"
+    L["RACE_74977"] = "Zaralek Zigzag (reverse)"
+    L["RACE_75035"] = "Sulfur Sprint"
+    L["RACE_75042"] = "Sulfur Sprint (advanced)"
+    L["RACE_75043"] = "Sulfur Sprint (reverse)"
 
     L["RACE_FINISHED_CHARACTER_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
     L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time, saved) return "You finished "..race..", current personal best in this character is "..time.." seconds, local saved best is "..saved.." seconds"; end

@@ -90,7 +90,7 @@ table.insert(DRR.Races, {id = 67741, currency = 2089, name = L["RACE_67741"], ra
 table.insert(DRR.Races, {id = 67742, currency = 2090, name = L["RACE_67742"], raceType = 1, gold = 81});
 table.insert(DRR.Races, {id = 72797, currency = 2193, name = L["RACE_72797"], raceType = 2, gold = 76});
 
--- Thaldraszus, currency = nil
+-- Thaldraszus
 -- The Flowing Forest Flight
 table.insert(DRR.Races, {id = 67095, currency = 2080, name = L["RACE_67095"], raceType = 0, gold = 49});
 table.insert(DRR.Races, {id = 67096, currency = 2081, name = L["RACE_67096"], raceType = 1, gold = 40});
@@ -116,7 +116,7 @@ table.insert(DRR.Races, {id = 70161, currency = 2103, name = L["RACE_70161"], ra
 table.insert(DRR.Races, {id = 70163, currency = 2104, name = L["RACE_70163"], raceType = 1, gold = 45});
 table.insert(DRR.Races, {id = 72750, currency = 2199, name = L["RACE_72750"], raceType = 2, gold = 47});
 
--- Forbidden Reach, currency = nil
+-- Forbidden Reach
 -- Stormsunder Crate Circuit
 table.insert(DRR.Races, {id = 73017, currency = 2201, name = L["RACE_73017"], raceType = 0, gold = 43});
 table.insert(DRR.Races, {id = 73018, currency = 2207, name = L["RACE_73018"], raceType = 1, gold = 42});
@@ -141,6 +141,32 @@ table.insert(DRR.Races, {id = 73052, currency = 2217, name = L["RACE_73052"], ra
 table.insert(DRR.Races, {id = 73061, currency = 2206, name = L["RACE_73061"], raceType = 0, gold = 59});
 table.insert(DRR.Races, {id = 73062, currency = 2212, name = L["RACE_73062"], raceType = 1, gold = 56});
 table.insert(DRR.Races, {id = 73065, currency = 2218, name = L["RACE_73065"], raceType = 2, gold = 57});
+
+-- Zaralek Cavern
+-- Crystal Circuit
+table.insert(DRR.Races, {id = 74839, currency = 2246, name = L["RACE_74839"], raceType = 0, gold = 63});
+table.insert(DRR.Races, {id = 74842, currency = 2252, name = L["RACE_74842"], raceType = 1, gold = 55});
+table.insert(DRR.Races, {id = 74882, currency = 2258, name = L["RACE_74882"], raceType = 2, gold = 53});
+-- Caldera Cruise
+table.insert(DRR.Races, {id = 74889, currency = 2247, name = L["RACE_74889"], raceType = 0, gold = 75});
+table.insert(DRR.Races, {id = 74899, currency = 2253, name = L["RACE_74899"], raceType = 1, gold = 68});
+table.insert(DRR.Races, {id = 74925, currency = 2259, name = L["RACE_74925"], raceType = 2, gold = 68});
+-- Brimstone Scramble
+table.insert(DRR.Races, {id = 74939, currency = 2248, name = L["RACE_74939"], raceType = 0, gold = 69});
+table.insert(DRR.Races, {id = 74943, currency = 2254, name = L["RACE_74943"], raceType = 1, gold = 64});
+table.insert(DRR.Races, {id = 74944, currency = 2260, name = L["RACE_74944"], raceType = 2, gold = 64});
+-- Shimmering Slalom
+table.insert(DRR.Races, {id = 74951, currency = 2249, name = L["RACE_74951"], raceType = 0, gold = 75});
+table.insert(DRR.Races, {id = 74954, currency = 2255, name = L["RACE_74954"], raceType = 1, gold = 70});
+table.insert(DRR.Races, {id = 74956, currency = 2261, name = L["RACE_74956"], raceType = 2, gold = 72});
+-- Zaralek Zigzag
+table.insert(DRR.Races, {id = 74972, currency = 2250, name = L["RACE_74972"], raceType = 0, gold = 55});
+table.insert(DRR.Races, {id = 74975, currency = 2256, name = L["RACE_74975"], raceType = 1, gold = 50});
+table.insert(DRR.Races, {id = 74977, currency = 2262, name = L["RACE_74977"], raceType = 2, gold = 48});
+-- Sulfur Sprint
+table.insert(DRR.Races, {id = 75035, currency = 2251, name = L["RACE_75035"], raceType = 0, gold = 64});
+table.insert(DRR.Races, {id = 75042, currency = 2257, name = L["RACE_75042"], raceType = 1, gold = 57});
+table.insert(DRR.Races, {id = 75043, currency = 2263, name = L["RACE_75043"], raceType = 2, gold = 57});
 
 
 DRR.CURRENT_RACE = nil;
