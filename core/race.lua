@@ -146,7 +146,7 @@ table.insert(DRR.Races, {id = 73064, currency = 2218, name = L["RACE_73064"], ra
 -- Crystal Circuit
 table.insert(DRR.Races, {id = 74839, currency = 2246, name = L["RACE_74839"], raceType = 0, gold = 63});
 table.insert(DRR.Races, {id = 74842, currency = 2252, name = L["RACE_74842"], raceType = 1, gold = 55});
-table.insert(DRR.Races, {id = 74882, currency = 2258, name = L["RACE_74882"], raceType = 2, gold = 55});
+table.insert(DRR.Races, {id = 74882, currency = 2258, name = L["RACE_74882"], raceType = 2, gold = 53});
 -- Caldera Cruise
 table.insert(DRR.Races, {id = 74889, currency = 2247, name = L["RACE_74889"], raceType = 0, gold = 75});
 table.insert(DRR.Races, {id = 74899, currency = 2253, name = L["RACE_74899"], raceType = 1, gold = 68});
