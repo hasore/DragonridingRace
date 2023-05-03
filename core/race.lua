@@ -159,7 +159,7 @@ table.insert(DRR.Races, {id = 74944, currency = 2260, name = L["RACE_74944"], ra
 table.insert(DRR.Races, {id = 74951, currency = 2249, name = L["RACE_74951"], raceType = 0, gold = 75});
 table.insert(DRR.Races, {id = 74954, currency = 2255, name = L["RACE_74954"], raceType = 1, gold = 70});
 table.insert(DRR.Races, {id = 74956, currency = 2261, name = L["RACE_74956"], raceType = 2, gold = 72});
--- Zaralek Zigzag
+-- Loamm Roamm
 table.insert(DRR.Races, {id = 74972, currency = 2250, name = L["RACE_74972"], raceType = 0, gold = 55});
 table.insert(DRR.Races, {id = 74975, currency = 2256, name = L["RACE_74975"], raceType = 1, gold = 50});
 table.insert(DRR.Races, {id = 74977, currency = 2262, name = L["RACE_74977"], raceType = 2, gold = 48});
