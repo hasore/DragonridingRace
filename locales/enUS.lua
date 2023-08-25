@@ -33,7 +33,9 @@ if L then
     L["ZONE_THALDRASZUS"] = "Thaldraszus"
     L["ZONE_FORBIDDENREACH"] = "The Forbidden Reach"
     L["ZONE_ZARALEKCAVERN"] = "Zaralek Cavern"
+    L["ZONE_KALIMDORCUP"] = "Kalimdor Cup"
 
+    -- The Waking Shores
     L["RACE_66679"] = "Ruby Lifeshrine Loop"
     L["RACE_66692"] = "Ruby Lifeshrine Loop (advanced)"
     L["RACE_72052"] = "Ruby Lifeshrine Loop (reverse)"
@@ -59,6 +61,7 @@ if L then
     L["RACE_66787"] = "Wingrest Roundabout (advanced)"
     L["RACE_72740"] = "Wingrest Roundabout (reverse)"
 
+    -- Ohn'Ahran Plains
     L["RACE_66835"] = "Sundapple Copse Circuit"
     L["RACE_66836"] = "Sundapple Copse Circuit (advanced)"
     L["RACE_72801"] = "Sundapple Copse Circuit (reverse)"
@@ -77,6 +80,7 @@ if L then
     L["RACE_70711"] = "River Rapids Route (advanced)"
     L["RACE_72807"] = "River Rapids Route (reverse)"
 
+    -- Azure Span
     L["RACE_66946"] = "The Azure Span Sprint"
     L["RACE_66947"] = "The Azure Span Sprint (advanced)"
     L["RACE_72796"] = "The Azure Span Sprint (reverse)"
@@ -96,6 +100,7 @@ if L then
     L["RACE_67742"] = "Archive Ambit (advanced)"
     L["RACE_72797"] = "Archive Ambit (reverse)"
 
+    -- Thaldraszus
     L["RACE_67095"] = "The Flowing Forest Flight"
     L["RACE_67096"] = "The Flowing Forest Flight (advanced)"
     L["RACE_72793"] = "The Flowing Forest Flight (reverse)"
@@ -115,6 +120,7 @@ if L then
     L["RACE_70163"] = "Caverns Criss-Cross (advanced)"
     L["RACE_72750"] = "Caverns Criss-Cross (reverse)"
 
+    -- The Forbidden Reach
     L["RACE_73017"] = "Stormsunder Crater Circuit"
     L["RACE_73018"] = "Stormsunder Crater Circuit (advanced)"
     L["RACE_73019"] = "Stormsunder Crater Circuit (reverse)"
@@ -134,6 +140,7 @@ if L then
     L["RACE_73062"] = "Forbidden Reach Rush (advanced)"
     L["RACE_73065"] = "Forbidden Reach Rush (reverse)"
 
+    -- Zaralek Cavern
     L["RACE_74839"] = "Crystal Circuit"
     L["RACE_74842"] = "Crystal Circuit (advanced)"
     L["RACE_74882"] = "Crystal Circuit (reverse)"
@@ -152,6 +159,56 @@ if L then
     L["RACE_75035"] = "Sulfur Sprint"
     L["RACE_75042"] = "Sulfur Sprint (advanced)"
     L["RACE_75043"] = "Sulfur Sprint (reverse)"
+
+    -- Kalimdor Cup
+    L["RACE_75347"] = "Rocketway Ride"
+    L["RACE_75355"] = "Rocketway Ride (advanced)"
+    L["RACE_75356"] = "Rocketway Ride (reverse)"
+    L["RACE_75310"] = "Winter Wander"
+    L["RACE_75311"] = "Winter Wander (advanced)"
+    L["RACE_75312"] = "Winter Wander (reverse)"
+    L["RACE_75317"] = "Nordrassil Spiral"
+    L["RACE_75318"] = "Nordrassil Spiral (advanced)"
+    L["RACE_75319"] = "Nordrassil Spiral (reverse)"
+    L["RACE_75330"] = "Hyjal Hotfoot"
+    L["RACE_75331"] = "Hyjal Hotfoot (advanced)"
+    L["RACE_75332"] = "Hyjal Hotfoot (reverse)"
+    L["RACE_75277"] = "Felwood Flyover"
+    L["RACE_75293"] = "Felwood Flyover (advanced)"
+    L["RACE_75294"] = "Felwood Flyover (reverse)"
+    L["RACE_75378"] = "Ashenvale Ambit"
+    L["RACE_75379"] = "Ashenvale Ambit (advanced)"
+    L["RACE_75380"] = "Ashenvale Ambit (reverse)"
+    L["RACE_75385"] = "Durotar Tour"
+    L["RACE_75386"] = "Durotar Tour (advanced)"
+    L["RACE_75387"] = "Durotar Tour (reverse)"
+    L["RACE_75412"] = "Great Divide Dive"
+    L["RACE_75413"] = "Great Divide Dive (advanced)"
+    L["RACE_75414"] = "Great Divide Dive (reverse)"
+    L["RACE_75437"] = "Razorfen Roundabout"
+    L["RACE_75438"] = "Razorfen Roundabout (advanced)"
+    L["RACE_75439"] = "Razorfen Roundabout (reverse)"
+    L["RACE_75463"] = "Thousand Needles Thread"
+    L["RACE_75464"] = "Thousand Needles Thread (advanced)"
+    L["RACE_75465"] = "Thousand Needles Thread (reverse)"
+    L["RACE_75394"] = "Webwinder Weave"
+    L["RACE_75395"] = "Webwinder Weave (advanced)"
+    L["RACE_75396"] = "Webwinder Weave (reverse)"
+    L["RACE_75409"] = "Desolace Drift"
+    L["RACE_75410"] = "Desolace Drift (advanced)"
+    L["RACE_75411"] = "Desolace Drift (reverse)"
+    L["RACE_75468"] = "Feralas Ruins"
+    L["RACE_75469"] = "Feralas Ruins (advanced)"
+    L["RACE_75470"] = "Feralas Ruins (reverse)"
+    L["RACE_75485"] = "Un'Goro Crater Circuit"
+    L["RACE_75486"] = "Un'Goro Crater Circuit (advanced)"
+    L["RACE_75487"] = "Un'Goro Crater Circuit (reverse)"
+    L["RACE_75472"] = "Ahn'Qiraj Circuit"
+    L["RACE_75473"] = "Ahn'Qiraj Circuit (advanced)"
+    L["RACE_75474"] = "Ahn'Qiraj Circuit (reverse)"
+    L["RACE_75481"] = "Uldum Tour"
+    L["RACE_75482"] = "Uldum Tour (advanced)"
+    L["RACE_75483"] = "Uldum Tour (reverse)"
 
     L["RACE_FINISHED_CHARACTER_BEST_FORMAT"] = function(race, time) return "You finished "..race..", current personal best in this character is "..time.." seconds"; end
     L["RACE_FINISHED_SAVED_BEST_FORMAT"] = function(race, time, saved) return "You finished "..race..", current personal best in this character is "..time.." seconds, local saved best is "..saved.." seconds"; end

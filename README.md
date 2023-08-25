@@ -39,3 +39,4 @@ Thanks a lot to the people that helped in the addon development and translation:
 - mostra_o_gato
 - hasore
 - qsdc & unplayed
+- finrodbr

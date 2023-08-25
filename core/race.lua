@@ -168,6 +168,71 @@ table.insert(DRR.Races, {id = 75035, currency = 2251, name = L["RACE_75035"], ra
 table.insert(DRR.Races, {id = 75042, currency = 2257, name = L["RACE_75042"], raceType = 1, gold = 57});
 table.insert(DRR.Races, {id = 75043, currency = 2263, name = L["RACE_75043"], raceType = 2, gold = 57});
 
+-- Kalimdor Cup
+-- Hyjal Hotfoot - Kalimdor 01
+table.insert(DRR.Races, {id = 75330, currency = 2312, name = L["RACE_75330"], raceType = 0, gold = 70});
+table.insert(DRR.Races, {id = 75331, currency = 2342, name = L["RACE_75331"], raceType = 1, gold = 63});
+table.insert(DRR.Races, {id = 75332, currency = 2372, name = L["RACE_75332"], raceType = 2, gold = 62});
+-- Winter Wander - Kalimdor 02
+table.insert(DRR.Races, {id = 75310, currency = 2313, name = L["RACE_75310"], raceType = 0, gold = 80});
+table.insert(DRR.Races, {id = 75311, currency = 2343, name = L["RACE_75311"], raceType = 1, gold = 73});
+table.insert(DRR.Races, {id = 75312, currency = 2373, name = L["RACE_75312"], raceType = 2, gold = 70});
+-- Nordrassil Spiral - Kalimdor 03
+table.insert(DRR.Races, {id = 75317, currency = 2314, name = L["RACE_75317"], raceType = 0, gold = 45});
+table.insert(DRR.Races, {id = 75318, currency = 2344, name = L["RACE_75318"], raceType = 1, gold = 41});
+table.insert(DRR.Races, {id = 75319, currency = 2374, name = L["RACE_75319"], raceType = 2, gold = 41});
+-- Felwood Flyover - Kalimdor 04
+table.insert(DRR.Races, {id = 75277, currency = 2315, name = L["RACE_75277"], raceType = 0, gold = 70});
+table.insert(DRR.Races, {id = 75293, currency = 2345, name = L["RACE_75293"], raceType = 1, gold = 63});
+table.insert(DRR.Races, {id = 75294, currency = 2375, name = L["RACE_75294"], raceType = 2, gold = 62});
+-- Rocketway Ride - Kalimdor 05
+table.insert(DRR.Races, {id = 75347, currency = 2316, name = L["RACE_75347"], raceType = 0, gold = 101});
+table.insert(DRR.Races, {id = 75355, currency = 2346, name = L["RACE_75355"], raceType = 1, gold = 94});
+table.insert(DRR.Races, {id = 75356, currency = 2376, name = L["RACE_75356"], raceType = 2, gold = 94});
+-- Ashenvale Ambit - Kalimdor 06
+table.insert(DRR.Races, {id = 75378, currency = 2317, name = L["RACE_75378"], raceType = 0, gold = 65});
+table.insert(DRR.Races, {id = 75379, currency = 2347, name = L["RACE_75379"], raceType = 1, gold = 59});
+table.insert(DRR.Races, {id = 75380, currency = 2377, name = L["RACE_75380"], raceType = 2, gold = 59});
+-- Durotar Tour - Kalimdor 07
+table.insert(DRR.Races, {id = 75385, currency = 2318, name = L["RACE_75385"], raceType = 0, gold = 82});
+table.insert(DRR.Races, {id = 75386, currency = 2348, name = L["RACE_75386"], raceType = 1, gold = 75});
+table.insert(DRR.Races, {id = 75387, currency = 2378, name = L["RACE_75387"], raceType = 2, gold = 75});
+-- Webwinder Weave - Kalimdor 08
+table.insert(DRR.Races, {id = 75394, currency = 2319, name = L["RACE_75394"], raceType = 0, gold = 80});
+table.insert(DRR.Races, {id = 75395, currency = 2349, name = L["RACE_75395"], raceType = 1, gold = 73});
+table.insert(DRR.Races, {id = 75396, currency = 2379, name = L["RACE_75396"], raceType = 2, gold = 70});
+-- Desolace Drift - Kalimdor 09
+table.insert(DRR.Races, {id = 75409, currency = 2320, name = L["RACE_75409"], raceType = 0, gold = 78});
+table.insert(DRR.Races, {id = 75410, currency = 2350, name = L["RACE_75410"], raceType = 1, gold = 70});
+table.insert(DRR.Races, {id = 75411, currency = 2380, name = L["RACE_75411"], raceType = 2, gold = 71});
+-- Great Divide Dive - Kalimdor 10
+table.insert(DRR.Races, {id = 75412, currency = 2321, name = L["RACE_75412"], raceType = 0, gold = 48});
+table.insert(DRR.Races, {id = 75413, currency = 2351, name = L["RACE_75413"], raceType = 1, gold = 43});
+table.insert(DRR.Races, {id = 75414, currency = 2381, name = L["RACE_75414"], raceType = 2, gold = 44});
+-- Razorfen Roundabout - Kalimdor 11
+table.insert(DRR.Races, {id = 75437, currency = 2322, name = L["RACE_75437"], raceType = 0, gold = 53});
+table.insert(DRR.Races, {id = 75438, currency = 2352, name = L["RACE_75438"], raceType = 1, gold = 47});
+table.insert(DRR.Races, {id = 75439, currency = 2382, name = L["RACE_75439"], raceType = 2, gold = 48});
+-- Thousand Needles Thread - Kalimdor 12
+table.insert(DRR.Races, {id = 75463, currency = 2323, name = L["RACE_75463"], raceType = 0, gold = 87});
+table.insert(DRR.Races, {id = 75464, currency = 2353, name = L["RACE_75464"], raceType = 1, gold = 77});
+table.insert(DRR.Races, {id = 75465, currency = 2383, name = L["RACE_75465"], raceType = 2, gold = 77});
+-- Feralas Ruins - Kalimdor 13
+table.insert(DRR.Races, {id = 75468, currency = 2324, name = L["RACE_75468"], raceType = 0, gold = 89});
+table.insert(DRR.Races, {id = 75469, currency = 2354, name = L["RACE_75469"], raceType = 1, gold = 84});
+table.insert(DRR.Races, {id = 75470, currency = 2384, name = L["RACE_75470"], raceType = 2, gold = 84});
+-- Ahn'Qiraj Circuit - Kalimdor 14
+table.insert(DRR.Races, {id = 75472, currency = 2325, name = L["RACE_75472"], raceType = 0, gold = 77});
+table.insert(DRR.Races, {id = 75473, currency = 2355, name = L["RACE_75473"], raceType = 1, gold = 68});
+table.insert(DRR.Races, {id = 75474, currency = 2385, name = L["RACE_75474"], raceType = 2, gold = 69});
+-- Uldum Tour - Kalimdor 15
+table.insert(DRR.Races, {id = 75481, currency = 2326, name = L["RACE_75481"], raceType = 0, gold = 84});
+table.insert(DRR.Races, {id = 75482, currency = 2356, name = L["RACE_75482"], raceType = 1, gold = 76});
+table.insert(DRR.Races, {id = 75483, currency = 2386, name = L["RACE_75483"], raceType = 2, gold = 76});
+-- Un'Goro Crater Circuit - Kalimdor 16
+table.insert(DRR.Races, {id = 75485, currency = 2327, name = L["RACE_75485"], raceType = 0, gold = 100});
+table.insert(DRR.Races, {id = 75486, currency = 2357, name = L["RACE_75486"], raceType = 1, gold = 90});
+table.insert(DRR.Races, {id = 75487, currency = 2387, name = L["RACE_75487"], raceType = 2, gold = 92});
 
 DRR.CURRENT_RACE = nil;
 DRR.CURRENT_RACE_CURRENCY = nil;
