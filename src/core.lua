@@ -5,16 +5,39 @@ Thank your group at the end of a dungeon run!
 
 local addonName, addon = ...;
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName, true);
+
+-- DEFAULTS
+local dbDefaults = {
+    global = {
+        options = {
+            fallback = true,
+        },
+        pb = {},
+        guildpb = {},
+        races = {},
+        minimap = {},
+    }
+};
+
+---@class DRR: AceAddon
+---@field version string
 local DRR = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "AceEvent-3.0", "AceConsole-3.0", "AceComm-3.0", "AceTimer-3.0");
+local MinimapIcon = LibStub("LibDBIcon-1.0");
 
 -- CONFIGURATION
-DRR.version = "0.2.5";
---DRR.version = "dev";
+DRR.version = GetAddOnMetadata(addonName, "Version");
 DRR.versionAlertSent = false
 
-DRR.COMM_PREFIX = addonName;
+DRR.COMM_PREFIX = "DragonridingRace";
 DRR.COMM_CHANNEL = "GUILD";
 DRR.CURRENT_PLAYER = UnitName("player");
+
+-- DEV MODE
+---@type LazyConsole-1.0
+local Console = nil;
+if "dev" == DRR.version then
+    Console = LibStub("LazyConsole-1.0");
+end
 
 local options = {
     name = addonName,
@@ -45,24 +68,28 @@ local options = {
 LibStub("AceConfig-3.0"):RegisterOptionsTable(addonName, options);
 local AceConfigDialog = LibStub("AceConfigDialog-3.0");
 
--- DEFAULTS
-local dbDefaults = {
-    global = {
-        options = {
-            fallback = true,
-        },
-        pb = {},
-        guildpb = {},
-        races = {},
-    }
-};
-
 function DRR:OnInitialize()
     -- init database
     DRR.db = LibStub("AceDB-3.0"):New("DRRDB", dbDefaults);
 
     -- init options
     DRR.optionsFrames = AceConfigDialog:AddToBlizOptions(addonName, L["ADDON_NAME"]);
+    -- Register the global variable `DRR_Mainwindow` as a "special frame"
+    -- so that it is closed when the escape key is pressed.
+    table.insert(UISpecialFrames, "DRR_Mainwindow");
+
+    ---@diagnostic disable-next-line: missing-fields
+    local DRRLDB = LibStub("LibDataBroker-1.1"):NewDataObject(addonName, {
+        type = "data source",
+        label = addonName,
+        icon = "Interface\\AddOns\\"..addonName.."\\images\\logo_minimap.tga",
+        OnClick = function() DRR:OpenPBWindow() end,
+        OnTooltipShow = function(tooltip)
+            tooltip:AddLine(addonName);
+            tooltip:AddLine(L["ADDON_DESCRIPTION_MINIMAP"], 1, 1, 1);
+        end,
+    });
+    MinimapIcon:Register(addonName, DRRLDB, DRR.db.global.minimap);
 end
 
 function DRR:OnEnable()
@@ -292,13 +319,17 @@ function DRR:OnPongReceived(from, version)
 end
 
 function DRR:PrintError(message)
-    DRR:Print("|cFFCC3333".. message .."|r");
+    if "dev" ~= self.version then
+        return;
+    end
+    Console:Log(message, "FFCC3333", 1);
 end
 
 function DRR:Debug(message)
-    if "dev" == self.version then
-        DRR:Print("|cFFAB18DB".. message .."|r");
+    if "dev" ~= self.version then
+        return;
     end
+    Console:Log(message, nil, 1);
 end
 
 function DRR:Fallback(toggle)
@@ -314,3 +345,5 @@ function DRR:Fallback(toggle)
 
     DRR:Print(msg)
 end
+
+_G[addonName] = DRR;

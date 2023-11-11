@@ -5,6 +5,7 @@ local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "ruRU", true);
 if L then
     L["ADDON_NAME"] = addonName;
     L["ADDON_DESCRIPTION"] = "Сохраняйте ваши рекорды гонок на драконах и соревнуйтесь с вашими друзьями!";
+    L["ADDON_DESCRIPTION_MINIMAP"] = "Сохраняйте ваши рекорды гонок на драконах\nи соревнуйтесь с вашими друзьями!";
     L["ADDON_VERSION_OUTDATED"] = "Доступна новая версия аддона.";
     L["ADDON_VERSION"] = "Версия:";
     L["ADDON_AUTHOR"] = "Автор:";
@@ -14,7 +15,7 @@ if L then
     L["FALLBACK_ENABLED"] = "Use of alternative method on event of failure is now enabled.";
     L["FALLBACK_DISABLED"] = "Use of alternative method on event of failure is now disabled.";
 
-    L["UI_PB_TITLE"] = "Ваши рекорды"
+    L["UI_PB_TITLE"] = "DragonridingRace: Ваши рекорды"
     L["UI_PB_HEADER_RACE"] = "|cffffd700Гонка|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700Время (обычная)|r"
     L["UI_PB_HEADER_PB_A"] = "|cffffd700Время (Высокая сложность)|r"

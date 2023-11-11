@@ -1,10 +1,11 @@
-## Interface: 100105
+## Interface: 100200
 
-## Title: DragonridingRace
+## Title: DragonridingRace-dev
 ## Notes: Save your best dragonriding course's times and compete with your friends!
 ## Notes-frFR: Enregistre tes meilleurs temps et entre en compétition avec tes amis !
 ## Author: Tzinn
-## Version: 0.2.6
+## Version: dev
+## IconTexture: Interface\AddOns\DragonridingRace-dev\images\logo_minimap.tga
 ## SavedVariables: DRRDB
 ## X-License: WTFPL
 
@@ -18,8 +19,11 @@ locales/ptPT.lua
 locales/ptBR.lua
 locales/ruRU.lua
 
-core/core.lua
-core/communication.lua
-core/race.lua
-core/racetime.lua
-core/ui.lua
+src/ui/widget/map.lua
+src/ui/widget/window.lua
+
+src/core.lua
+src/communication.lua
+src/race.lua
+src/racetime.lua
+src/ui.lua

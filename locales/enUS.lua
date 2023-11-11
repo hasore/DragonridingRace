@@ -4,7 +4,8 @@ local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "enUS", true);
 
 if L then
     L["ADDON_NAME"] = addonName;
-    L["ADDON_DESCRIPTION"] = "Save your best dragonriding course's times and compete with your friends!";
+    L["ADDON_DESCRIPTION"] = "Save your best dragonriding course'stimes and compete with your friends!";
+    L["ADDON_DESCRIPTION_MINIMAP"] = "Save your best dragonriding course's\ntimes and compete with your friends!";
     L["ADDON_VERSION_OUTDATED"] = "A more recent version of the addon is available!";
     L["ADDON_VERSION"] = "Version:";
     L["ADDON_AUTHOR"] = "Author:";
@@ -14,7 +15,7 @@ if L then
     L["FALLBACK_ENABLED"] = "Use of alternative method on event of failure is now enabled.";
     L["FALLBACK_DISABLED"] = "Use of alternative method on event of failure is now disabled.";
 
-    L["UI_PB_TITLE"] = "Your best times"
+    L["UI_PB_TITLE"] = "DragonridingRace: Your best times"
     L["UI_PB_HEADER_RACE"] = "|cffffd700Race|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700Time (normal)|r"
     L["UI_PB_HEADER_PB_A"] = "|cffffd700Time (advanced)|r"

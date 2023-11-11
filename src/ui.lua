@@ -1,10 +1,17 @@
-
-local addonName, DRR = ...;
+local addonName, addon = ...;
+---@class DRR
+local DRR = addon;
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName, true);
+local HBD = LibStub("HereBeDragons-2.0");
 local setmetatable = _G.setmetatable;
 
 local AceGUI = LibStub("AceGUI-3.0");
-local isOpened = false;
+local opened = false;
+local frame = AceGUI:Create("DRRWindow");
+frame:Hide();
+local scrollFrame = AceGUI:Create("ScrollFrame");
+local mainGroup = AceGUI:Create("SimpleGroup");
+-- local mapFrame = CreateFrame("Frame", nil, frame.frame);
 
 function DRR:AddAllPB(container)
     container:ReleaseChildren();
@@ -297,39 +304,98 @@ function DRR:AddPBLine(race, raceAdv, raceReverse, normalTime, advancedTime, rev
 end
 
 function DRR:OpenPBWindow()
-    -- Don't open multiple windows
-    if isOpened then return end
+    if not opened then
+        frame:SetTitle(L["UI_PB_TITLE"]);
+        -- frame:SetStatusText(L["UI_PB_GUILD_INFO"])
+        -- frame:SetWidth(800);
+        -- frame:SetHeight(800 * 0.66);
+        -- frame.frame:SetResizeBounds(500, 500 * 0.66);
+        -- frame.frame:SetFrameStrata("HIGH");
+        -- frame:SetCallback("OnClose", function(widget)
+        --     frame:Hide();
+        -- end)
+        -- frame:SetLayout("Flow");
 
-    local frame = AceGUI:Create("Frame")
-    frame:SetTitle(L["UI_PB_TITLE"]);
-    frame:SetStatusText(L["UI_PB_GUILD_INFO"])
-    frame:SetWidth(900);
-    frame:SetHeight(675);
-    frame:SetCallback("OnClose", function(widget)
-        frame:ReleaseChildren();
-        AceGUI:Release(widget);
-        isOpened = false;
-    end)
-    frame:SetLayout("Flow");
+        -- function frame:OnWidthSet(width)
+        --     frame:SetHeight(width * 0.66);
+        -- end
 
-    local mainGroup = AceGUI:Create("SimpleGroup");
-    mainGroup:SetFullWidth(true);
-    mainGroup:SetFullHeight(true);
-    mainGroup:SetLayout("Flow");
+        mainGroup:SetFullWidth(true);
+        mainGroup:SetFullHeight(true);
+        mainGroup:SetLayout("Fill");
 
-    local scrollGroup = AceGUI:Create("SimpleGroup");
-    scrollGroup:SetFullWidth(true);
-    scrollGroup:SetFullHeight(true);
-    scrollGroup:SetLayout("Fill");
-    mainGroup:AddChild(scrollGroup);
+        -- local scrollGroup = AceGUI:Create("SimpleGroup");
+        -- scrollGroup:SetFullWidth(true);
+        -- scrollGroup:SetFullHeight(true);
+        -- scrollGroup:SetLayout("Fill");
+        -- mainGroup:AddChild(scrollGroup);
 
-    scrollFrame = AceGUI:Create("ScrollFrame");
-    scrollFrame:SetLayout("Flow");
-    scrollGroup:AddChild(scrollFrame);
+        -- scrollFrame:SetLayout("Flow");
+        -- scrollGroup:AddChild(scrollFrame);
 
-    DRR:AddAllPB(scrollFrame);
+        -- local iconFrame = CreateFrame("Frame", nil, frame.frame);
+        -- iconFrame:SetFrameStrata("TOOLTIP")
+        -- iconFrame:SetFrameLevel(100)
+        -- iconFrame:SetWidth(75);
+        -- iconFrame:SetHeight(75);
+        -- local icon = iconFrame:CreateTexture(nil, "OVERLAY", nil);
+        -- icon:SetTexture("Interface\\AddOns\\"..addonName.."\\images\\logo_window.tga", "CLAMP", "CLAMPTOBLACKADDITIVE");
+        -- icon:SetAllPoints(iconFrame);
+        -- iconFrame.texture = icon;
+        -- iconFrame:SetPoint("TOPLEFT", -15, 15);
+        -- iconFrame:Show();
 
-    frame:AddChild(mainGroup);
+        -- mapFrame:SetAllPoints(frame.frame);
+        -- mapFrame:SetPoint("TOPLEFT", frame.frame, "TOPLEFT", 5, -30);
+        -- mapFrame:SetPoint("BOTTOMRIGHT", frame.frame, "BOTTOMRIGHT", -5, 5);
+        -- mapFrame:SetFrameStrata("BACKGROUND");
+        -- local map = mainGroup.frame:CreateTexture(nil, "OVERLAY", nil);
+        -- map:SetTexture("Interface\\AddOns\\"..addonName.."\\images\\zones\\2022.tga");
+        -- map:SetTexCoord(0, 0.75, 0, 1);
+        -- map:SetAllPoints(mainGroup.frame);
+        -- map:SetAlpha(0.6);
+        -- mapFrame:Show();
 
-    isOpened = true;
+        -- local map = AceGUI:Create("DRRMapFrame");
+        -- map:SetPoint("TOPLEFT", frame.frame, "TOPLEFT", 5, -30);
+        -- map:SetPoint("BOTTOMRIGHT", frame.frame, "BOTTOMRIGHT", -5, 5);
+        -- map:SetTexture("Interface\\AddOns\\"..addonName.."\\images\\zones\\2022.tga");
+        -- map:SetTextureCoord(0, 0.75, 0, 1);
+        -- frame:AddChild(map);
+
+        local map = DRR:UI_CreateMap(frame.content, 2022);
+        local playerX, playerY, mapId, mapType = HBD:GetPlayerZonePosition();
+        map:AddPin(playerX, playerY);
+
+        -- add name input
+        -- local name = AceGUI:Create("EditBox");
+        -- name:SetLabel("Name");
+        -- name:SetRelativeWidth(0.5);
+        -- mainGroup:AddChild(name);
+
+
+        -- frame:AddChild(mainGroup);
+        opened = true;
+    end
+
+
+    -- DRR:AddAllPB(scrollFrame);
+    frame:Show();
+    
+
+    local playerX, playerY, mapId, mapType = HBD:GetPlayerZonePosition();
+    DRR:Debug(playerX.." "..playerY.." "..mapId);
+    DRR:Debug(HBD:GetLocalizedMap(mapId));
+    local sizeX, sizeY = HBD:GetZoneSize(mapId);
+    DRR:Debug(sizeX.." "..sizeY);
+
+    -- local playerIcon = mainGroup.frame:CreateTexture(nil, "OVERLAY", nil);
+    -- playerIcon:SetTexture("Interface\\AddOns\\"..addonName.."\\images\\icons.tga");
+    -- playerIcon:SetTexCoord(0, 0.5, 0, 1);
+    -- playerIcon:SetWidth(24);
+    -- playerIcon:SetHeight(24);
+    -- playerIcon:SetPoint("CENTER", mainGroup.frame, "TOPLEFT", playerX * mainGroup.frame:GetWidth(), -playerY * mainGroup.frame:GetHeight());
+    -- playerIcon:Show();
+
+    _G["DRR_Mainwindow"] = frame.frame;
 end

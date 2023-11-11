@@ -5,6 +5,7 @@ local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "zhCN", false);
 if L then
     L["ADDON_NAME"] = addonName;
     L["ADDON_DESCRIPTION"] = "保存你最佳的驭龙竞速成绩，并和你的朋友竞争！";
+    L["ADDON_DESCRIPTION_MINIMAP"] = "保存你最佳的驭龙竞速成绩，并和你的朋友竞争！";
     L["ADDON_VERSION_OUTDATED"] = "该插件的最新版本可用！";
     L["ADDON_VERSION"] = "版本:";
     L["ADDON_AUTHOR"] = "作者:";
@@ -14,7 +15,7 @@ if L then
     L["FALLBACK_ENABLED"] = "Use of alternative method on event of failure is now enabled.";
     L["FALLBACK_DISABLED"] = "Use of alternative method on event of failure is now disabled.";
 
-    L["UI_PB_TITLE"] = "你的最佳时间"
+    L["UI_PB_TITLE"] = "DragonridingRace: 你的最佳时间"
     L["UI_PB_HEADER_RACE"] = "|cffffd700赛道|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700时间 (普通)|r"
     L["UI_PB_HEADER_PB_A"] = "|cffffd700时间 (进阶)|r"

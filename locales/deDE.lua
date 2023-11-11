@@ -5,6 +5,7 @@ local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "deDE", false);
 if L then
     L["ADDON_NAME"] = addonName;
     L["ADDON_DESCRIPTION"] = "Speicher deine Bestzeiten bei den Drachenrennen und mess dich mit deinen Freunden!";
+    L["ADDON_DESCRIPTION_MINIMAP"] = "Speicher deine Bestzeiten bei den Drachenrennen\nund mess dich mit deinen Freunden!";
     L["ADDON_VERSION_OUTDATED"] = "Eine neuere Version des Addons ist verfügbar!";
     L["ADDON_VERSION"] = "Version:";
     L["ADDON_AUTHOR"] = "Urheber:";
@@ -14,7 +15,7 @@ if L then
     L["FALLBACK_ENABLED"] = "Use of alternative method on event of failure is now enabled.";
     L["FALLBACK_DISABLED"] = "Use of alternative method on event of failure is now disabled.";
 
-    L["UI_PB_TITLE"] = "Deine persönlichen Bestzeiten"
+    L["UI_PB_TITLE"] = "DragonridingRace: Deine persönlichen Bestzeiten"
     L["UI_PB_HEADER_RACE"] = "|cffffd700Rennen|r"
     L["UI_PB_HEADER_PB_N"] = "|cffffd700Bestzeit (normal)|r"
     L["UI_PB_HEADER_PB_A"] = "|cffffd700Bestzeit (fortgeschritten)|r"
